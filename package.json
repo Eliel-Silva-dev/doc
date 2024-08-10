@@ -11,5 +11,8 @@
     "prettier": "^3.3.2"
   },
   "author": "Eliel Silva DEv",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "yup": "^1.4.0"
+  }
 }
