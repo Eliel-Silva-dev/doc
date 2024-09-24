@@ -11,3 +11,6 @@ data.padStart(nº, ''); //- preenche as strings n vezes com o valor espaço vazi
 data.padEnd(nº, '.'); //- preenche as strings n vezes com o valor ponto nesse caso.
 
 data.replace(um, outro); //- troca um termo pelo outro
+
+data.substg(inicio, quantidade_de_letras); //- extrair uma substring de uma string maior
+data.substring(inicio, fim); //- extrair uma substring de uma string maior
