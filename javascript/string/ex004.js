@@ -1,5 +1,3 @@
-//toUpperCase() - transforma todas as letras em maiusculas
-//toLowerCase() - transforma todas as letras em minusculas
 
 let programador_1 = 'Flávia';
 let programador_2 = 'Rogério';

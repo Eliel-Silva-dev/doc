@@ -1,5 +1,3 @@
-//length retorna a quantidade de caracteres
-
 let nome = 'Isabela';
 let frase = nome + ' está aprendendo Javascript';
 
