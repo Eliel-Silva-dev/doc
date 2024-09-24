@@ -16,3 +16,5 @@ data.substg(inicio, quantidade_de_letras); //- extrair uma substring de uma stri
 data.substring(inicio, fim); //- extrair uma substring de uma string maior
 
 data.indexOf('palavra'); //- retorna a posição inicial da palavra, se não encontrar retorna -1
+
+data.split(''); //- quebra um string maior em varias pequenas usando certos elementos de referencia, seja um espaço ou uma virgula.
