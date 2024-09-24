@@ -14,3 +14,5 @@ data.replace(um, outro); //- troca um termo pelo outro
 
 data.substg(inicio, quantidade_de_letras); //- extrair uma substring de uma string maior
 data.substring(inicio, fim); //- extrair uma substring de uma string maior
+
+data.indexOf('palavra'); //- retorna a posição inicial da palavra, se não encontrar retorna -1
