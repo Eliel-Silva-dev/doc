@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="lista de tarefas" />
+    <meta
+      name="description"
+      content="Primeira tentativa de criar uma lista do zero"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="hydrah tecnologia" />
+    <link rel="stylesheet" href="style.css" />
+    <title>lista de tarefas 02</title>
+  </head>
+  <body>
+    <header>
+      <h1>lista tarefas 02</h1>
+    </header>
+    <main>
+      <section class="container-lista">
+        <div class="cabecalho-lista">
+          <h2>Lista de tarefas</h2>
+          <p>Descreva qual a tarefa e clique em adicionar</p>
+        </div>
+        <div class="entrada_dados">
+          <input
+            type="text"
+            name="tarefa"
+            id="tarefa_campo"
+            placeholder="Descreva qual a tarefa"
+            title="Escreva a tarefa aqui"
+          />
+          <button type="button" value="adicionar" title="" class="btn" id="btn">
+            Adicionar
+          </button>
+        </div>
+        <div class="lista">
+          <ul id="lista_pai"></ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por Hydrah Tecnologia</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
