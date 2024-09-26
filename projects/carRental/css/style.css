@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+.secao-topo {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.secao-topo p {
+  padding: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.secao-largura-limitada {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+p {
+  font-size: 1.7rem;
+  margin: 5px 0;
+}
+.secao-background-capa {
+  min-height: 50rem;
+  background-image: url('../img/capa.jpg');
+  background-size: cover;
+}
+.secao-background-conteudo {
+  text-align: right;
+  padding: 50px 20px;
+  background: #00000085;
+}
+
+/* Seção conteúdo */
+.secao-conteudo {
+  padding: 50px 20px;
+}
+.secao-conteudo h3 {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+.img-conteudo {
+  width: 250px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.secao-conteudo span {
+  border-left: 1px solid;
+  padding-left: 10px;
+  font-size: 1.6rem;
+}
+
+/* Seção com imagem de fundo e texto */
+.secao-background-divisao {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #d92121;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.secao-background-divisao h3 {
+  font-size: 3.6rem;
+  background-color: #6c0000;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60rem;
+}
+
+.form_alucar {
+  width: 100%;
+}
+.form_alucar legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+}
+.grupo-campo label {
+  font-size: 1.4rem;
+}
+.grupo-campo input,
+.grupo-campo select {
+  margin: 12px 0;
+  height: 25px;
+  font-size: 1.4rem;
+  padding-left: 5px;
+  outline-color: red;
+}
+
+.secao-conteudo fieldset {
+  margin: 12px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato button {
+  width: 100%;
+  text-align: center;
+  height: 3.2rem;
+  background: #d92121;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 20px;
+  transition: 300ms ease-in-out;
+}
+.contato button:hover {
+  background-color: #6c0000;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  width: 30px;
+  height: 30px;
+
+  position: fixed;
+  bottom: 10px;
+  right: 7px;
+
+  border-radius: 50%;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+.up a {
+  text-decoration: none;
+  padding: 3px;
+}
+.up .fa-circle-up {
+  color: black;
+}
+.copy {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.copy p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.copy a {
+  margin: 20px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.tks_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecedef;
+  color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.tks_contact div {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.tks_contact h1 {
+  font-size: 3rem;
+  color: black;
+}
+.tks_contact p {
+  font-size: 2rem;
+}
+.tks_contact .voltar {
+  background-color: #f5c18b;
+  color: #499c97;
+  border: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #c46e52;
+  border-right: 2px solid #c46e52;
+  cursor: pointer;
+}
+.tks_contact .voltar:hover {
+  color: #ecedef;
+  background-color: #c46e52;
+}
+
+.lgpd {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  padding: 20px;
+  background-color: #5180e0;
+  color: white;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+}
+.lgpd h2 {
+  color: white;
+  font-size: 18px;
+}
+.lgpd a {
+  color: white;
+}
+.lgpd button {
+  background-color: #04a600;
+  border: 2px solid #035254;
+  color: white;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 300ms ease-in-out;
+  margin-left: 5px;
+}
+.lgpd button:hover {
+  background-color: #035254;
+}
+@media (max-width: 815px) {
+  .img-conteudo {
+    width: 100%;
+  }
+}
