@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  height: 180px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
