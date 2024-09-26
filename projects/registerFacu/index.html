@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Registros - faculdade</title>
+  </head>
+  <body>
+    <header>
+      <span>Faculdade</span>
+    </header>
+    <main>
+      <h1>Matrícula</h1>
+      <p>
+        Preencha os campos abaixo para criar a sua matrícula e seu cadastro no
+        ambiente virtual da faculdade.
+      </p>
+
+      <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+        <label>Nome: </label>
+        <input
+          type="text"
+          name="nome"
+          placeholder="Digite seu nome completo "
+          required
+        />
+
+        <label>Data de nascimento</label>
+        <input
+          type="date"
+          name="data_nascimento"
+          placeholder="Data de nascimento"
+          max="2023-09-22"
+          required
+        />
+
+        <label>Email: </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="exemplo@email.com"
+          required
+        />
+
+        <label>Telefone: </label>
+        <input
+          type="tel"
+          name="telefone"
+          placeholder="(xx) xxxxx-xxxx"
+          minlength="14"
+          required
+        />
+
+        <label>Melhor dia para vencimento: </label>
+        <input
+          type="number"
+          name="dia_vencimento"
+          placeholder="Valores entre 10 e 20"
+          min="10"
+          max="20"
+          required
+        />
+
+        <label>Login: </label>
+        <input
+          type="text"
+          name="Login"
+          placeholder="Usuario"
+          minlength="3"
+          required
+        />
+
+        <label>Senha: </label>
+        <input
+          type="password"
+          name="Senha"
+          placeholder="Digite sua senha"
+          minlength="4"
+          maxlength="8"
+          required
+        />
+
+        <button type="submit">Enviar Matrícula</button>
+      </form>
+    </main>
+    <footer>Copyright 2022 - Faculdade</footer>
+  </body>
+</html>
