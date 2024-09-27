@@ -1,0 +1,7 @@
+{
+  "author": "Eliel Silva",
+  "dependencies": {
+    "braces": "^3.0.3",
+    "sass": "^1.75.0"
+  }
+}
