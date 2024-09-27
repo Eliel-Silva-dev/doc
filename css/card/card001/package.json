@@ -1,0 +1,15 @@
+{
+  "name": "card001",
+  "version": "2.0.0",
+  "description": "card 001",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Eliel Silva",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}
