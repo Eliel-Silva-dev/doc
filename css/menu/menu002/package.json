@@ -1,0 +1,16 @@
+{
+  "name": "menu_02",
+  "version": "1.2.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Eliel Silva",
+  "license": "ISC",
+  "dependencies": {
+    "braces": "^3.0.3",
+    "sass": "^1.75.0"
+  }
+}
