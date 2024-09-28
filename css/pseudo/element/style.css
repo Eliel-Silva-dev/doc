@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+  /*Familia de todo o texto do site*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  /* Configuração padrão dos links do site*/
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  /* Quando o link for visitado sua cor vai mudar verde*/
+  color: rgb(2, 155, 83);
+}
+
+a:hover {
+  /* Quando passar o mouse sobre o link ele vai adquirir sublinhado e cor preta*/
+  text-decoration: underline;
+  color: black;
+}
+
+a:active {
+  /*quando ele estiver sendo clicado sua cor mudara para amarelo*/
+  color: yellow;
+}
+
+/* Pseudo elementos mechem diretamento no texto das htmls atraves do CSS*/
+
+a::after {
+  /*Esse Pseudo elemento adiciona a palavra "link" apos o link*/
+  content: ' link';
+  color: rgb(110, 109, 109);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a::before {
+  /*Esse Pseudo elemento*/
+  content: '♯ ';
+}

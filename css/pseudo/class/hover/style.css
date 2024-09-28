@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*
+    # Representa ID em CSS
+    . Representa Class em CSS
+    : Representa uma pseudo classe - elas representão um estado.
+    :: Representa um psideudo elemento
+    > significa filho de um determinado seletor
+*/
+div {
+  background-color: lightgray; /*cor de fundo*/
+  text-align: center; /*alinhamento do texto*/
+  height: 200px; /*altura da div*/
+  width: 200px; /* largura da div*/
+  border: 1px solid rgb(190, 3, 3); /* tamanho + tipo + cor da borda*/
+  display: inline-block;
+}
+
+div:hover {
+  /* Um estado - somente quando passar o mause por cima é que essa dunção sera ativada*/
+  background-color: rgb(28, 216, 38);
+}
+
+div#exemplo2 {
+  /* ID criado para separar os exemplos. anulei todos os efeitos da Div principal*/
+  width: 150px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  text-align: left;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+div#exemplo2:hover {
+  /*Quando passar o mouse sobre a div#exemplo2 acontecera isso:*/
+  background-color: red;
+  color: yellow;
+}
+
+div#exemplo2 > p {
+  /*os paragrafos que estiverem dentro da div com ID exemplo2 não vão aparecer*/
+  display: none;
+}
+
+div#exemplo2:hover > p {
+  /*quando passar o mouse sobre a div#exemplo2 todos os paragrafos que estiverem dentro dela vão receber as sequintes config.*/
+  display: block;
+  background-color: green;
+  color: blue;
+}
