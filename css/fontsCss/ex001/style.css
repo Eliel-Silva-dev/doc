@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+@font-face {
+  font-family: 'Minha fonta';
+  src: url('littlebird.ttf');
+}
+
+body {
+  font-size: 12pt;
+}
+
+h2 {
+  font-weight: normal; /* serve para tirar o negrito dos títulos */
+}
+
+h2#padrao {
+  font-family: Arial, Helvetica, sans-serif; /* O navegador vai tentar carregar a primeira, se não funcionar, passa pra próxima */
+}
+
+h2#google {
+  font-family: 'pacifico', cursive; /* A importação dessa fonte aconteceu na linha 3 */
+}
+
+h2#local {
+  font-family: 'Minha fonte', sans-serif; /* Fonte local importada da linha 9 até 12 */
+}
