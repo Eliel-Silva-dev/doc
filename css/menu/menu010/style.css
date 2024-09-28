@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.menu01 ul {
+  background-color: black;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.menu01 ul li {
+  float: left;
+}
+.menu01 ul li a,
+.botao_descer01 {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.menu01 ul li a:hover,
+.descer01:hover .botao_descer01 {
+  background-color: red;
+}
+.menu01 ul li.descer01 {
+  display: inline-block; /*propriedade declarada para poder usar position: absolute na classe conteudo*/
+}
+.menu01 div.conteudo_descido01 {
+  position: absolute;
+  background-color: white;
+  width: 150px;
+  display: none;
+}
+.menu01 div.conteudo_descido01 a {
+  color: black;
+  display: block;
+  text-align: left;
+  border: 1px solid grey;
+}
+.menu01 .descer01:hover div.conteudo_descido01 {
+  display: block;
+}
+.menu01 div.conteudo_descido01 a:hover {
+  color: white;
+}
