@@ -1,0 +1,68 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 5px;
+}
+h1 {
+  margin: 5px 0;
+}
+header {
+  width: 100%;
+  height: 50px;
+  padding: 5px 0;
+  text-align: center;
+  background-color: rgb(228, 228, 228);
+}
+section {
+  padding: 10px 5px;
+}
+section:nth-of-type(odd) {
+  background-color: rgb(108, 172, 255);
+}
+footer {
+  width: 100%;
+  height: 55px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.cards01 {
+  width: 100%;
+}
+.cards01 div img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cards01 .caixa01 {
+  text-align: center;
+  background: white;
+  width: 300px;
+  height: auto; /*vai fazer a caixa acompanhar a expanão do texto*/
+  box-shadow:
+    0 4px 8px 0 rgb(0, 0, 0, 0.19),
+    0 6px 20px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.cards01 .reduzido01 {
+  white-space: nowrap;
+  /*
+    faz com que o conteudo não quebre linha, fique tudo numa só*/
+  overflow: hidden;
+  /*
+     esconde todo conteudo que passa as dimensões da caixa*/
+  text-overflow: ellipsis;
+  /*
+    quando o overflow for atingido o texto deve ter a ssguintes config.: antes de atingir o limite do card vai aparecer 3 pontos (...) de continua!*/
+  padding-bottom: 30px;
+}
+
+.cards01 .caixa01:hover .reduzido01 {
+  white-space: normal;
+  /*
+    quando o mouse passar por cima o conteudo passa a quebrar linha normal
+    */
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+    Estilos de borda: solid (solido) + dashed (pontilhada) + dotted (pontilhado) + double (linhas duplas).
+    MARGEM: Quando se coloca 'margin: auto' a box é centralizada.
+*/
+body {
+  font: 12pt arial; /*declaração simplificada: tamanho + font + */
+  background-color: rgb(218, 218, 218);
+}
+
+h1 {
+  /*display: inline; se quiser mudar o box-level para inline-level*/
+  background-color: aquamarine;
+  height: 300px; /*altura da box*/
+  width: 300px; /*largura da box*/
+  border: 10px solid red; /*borda da box + na declaração simplificada deve-se especipicar nessa ordem: tamanho + tipo + cor*/
+  padding: 01px; /*declarar 1, 2, ou 4 var*/
+  margin: 50px auto; /*margem lateral centralizada + ela precisa ser declarada na ordem de um relogio*/
+  outline: 10px dashed blue; /*tracejado fora da margem + largura + tipo + cor*/
+}
+
+a {
+  /*Personalizei colocando mais tags para esperimentar*/
+  border: 2px solid blue;
+  padding: 3px 3px;
+  text-decoration: none;
+  margin: 5px;
+  color: brown;
+  background-color: aquamarine;
+}

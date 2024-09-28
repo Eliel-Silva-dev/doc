@@ -1,0 +1,59 @@
+<!doctype html>
+/-- nav : Essa teg representa um elemento de navegação no site, ele não suporta
+texto diretamente escrito nele (verificar se parágrafos também entrao nessa
+regra). É usado para colocar botões ou links. tipo box-level da classe fluxo e
+seus filhos tambem são de fluxo. para editar style: "nav {}" para editar os
+filhos seguir seletor: "nav a {}". Atributos: todas as tags do HTML podem
+receber atributos. eles são declarados no começo ou na abertura das tags. Eles
+podem liberar recursos ou funções diferentes da tag. --Escopo global (atributos
+que podem ser usadas em várias tags): * acsiscy: da um foco especial em uma
+parte específica do site; * class: * contented-editable: * data--: armazenar um
+valor ou informação dentro da tag. é possível usar esse atributo várias vezes no
+código. * * lang: específica qual a linguagem que será usada, seja no site como
+um rodo ou em partes específicas. * --/
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com caixas em CSS</title>
+    <link rel="shortcut ico" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="caixa02.css" />
+    <style>
+      @charset "UTF-8";
+      /**/
+      body {
+        font: 12pt Arial black;
+        background-color: green;
+      }
+      header {
+        display: block;
+      }
+      main {
+      }
+      footer {
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link 01</a>
+        <a href="#">Link 02</a>
+        <a href="#">Link 03</a>
+        <a href="#">Link 04</a>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <h1>Modelos de caixas 02</h1>
+      <section>
+        <article>
+          <p>lorem</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
