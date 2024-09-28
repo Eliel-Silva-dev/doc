@@ -1,0 +1,1329 @@
+<!doctype html><!--Essa tag define que o documento será escrito em HTML 5 /so abre /unica tag que pode vir antes da tag raiz-->
+
+<!--
+    Vs -Code dicas
+    copiar linha: SHIFT + ALT + SETA
+    apagar linha: CONTRL + SHIFT + K
+    mudar linha de posição: ATL + SETA
+    proxima ocorrencia de palavra: CONTRL + D
+    modo zen: CONTROL + K + Z
+
+-->
+
+<html lang="pt-br"> <!--HTML ; tag raiz /abre+fecha /recebe todos os atributos globais /em um atr exclusivo: xmlns que define que esse doc html esta em conformidade com a versão anterior do html /style: block e sem outline -->
+
+<head><!--define a cabeça do doc html /abre+fecha /carrega todas as tags de irmoção sobre a pagina /todos atr globais /style: display none-->
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width" inicial-scale="1.0">
+    <link rel="stylesheet" href="../hcode.css">
+    <link rel="shortcut icon" href="../image/nerd.ico" type="image/x-icon">
+    <title>Tags em HTML 5</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body><!--corpo da pagina /abre+fecha / todas as tag serão filhas dela /todos os atr globais /style: dispaly block; margin 8px; outline none-->
+    <header><!---->
+        <h1>Curso HTML plataforma Hcode</h1>
+        <nav>
+            <a href="../hcodehome.html">Home</a>
+            <a href="../eventos/eventos.html">Eventos</a>
+            <a href="../atributos/atributos.html">Atributos</a>
+        </nav>
+    </header>
+    <main><!---->
+        <section>
+            <h2>Tags da linguagem HTML 5</h2>
+            <p>Confira abaixo todas as tags usadas na linguagem HTML 5</p>
+        </section>
+        <section id="tag_title">
+            <h2>Tag Title</h2>
+            <p>Éssa tag nomeia as paginas do seu site; Cada pagina deve ter um title unico que explique do que se trata a pagina; o title fica visivel na janela do navegador e talves num preview; no icone dos atalhos do navegador; herda todos os atributos globais e seu style: dispaly none.</p>
+        </section>
+        <section id="tag_meta"><!--charset + name + contente(só recebe text)-->
+            <h2>Tag 'meta'</h2>
+            <p>Essa tag define um metadato da página; Esses metadados serão usados por navegadores, mecanismos de pesquisa e outros serviços da web; eles devem ser declarados dentro do 'head' da página; style: none</p>
+            <div>
+                <meta charset="UTF-8"><!--defibe o padrão de caracteres que será usado; o UTF-8 abrange quase todos os idiomas e padrões de simbolos e acentuações-->
+                <meta name="viewport" content="width=device-width" initial-scale="1.0"><!--tamanho da janela de visualização sera o tamanho da janela do dispositivo, começando na escala de 1.-->
+                <meta http-equiv="X-UA-Compatible" content="ie-edge"><!--força o navegador usar outro motor de renderização, + atualizado; nesse caso o do Edge-->
+                <meta name="discription" content="Exemplo de descrição da pagina"><!--define a descrição da pagina, comenta sobre seu conteudo. obs importante para os mecanismos de busca-->
+                <meta name="keywords" content="HTML,CSS,JavaScript,PHP"><!--palavras chaves para que os mecanismos de pesquisa achem a página-->
+                <meta name="author" content="Eliel Pereira"><!--Quem desenvolveu a página em questão-->
+                <!--<meta http-equiv="refresh" content="">Define um temporizador para que a página atualize sozinha, é possivel ainda colocar um link de redirecionamento para outra página basta colocar ,url dentro do contente-->
+                <meta name="application-name" content="Hydrah Technology"><!--estabelece um nome especifo para nome de atalhos ou para nome de aplicativos, ele substitui o title da pagina. -->
+                <meta name="generator" content="Visual Studio Code"><!--Especifica qual o recurso ou aplicação qu efoi usada para criar a página-->
+            </div>
+        </section>
+        <section id="tag_p"><!--Recebe todos os atributos globais; style: dispaly block + margin 1em encima e embaixo e 0 dos lados.-->
+            <h2>Tag 'p'</h2>
+            <p>Essa tag é usada para colocar textos na pagina, comentaros, posts...</p>
+        </section>
+        <section id="tag_h"><!--Possui todos os atr global. style: display block ; abre e fecha-->
+            <h2>Tag 'h'</h2>
+            <p>A tag H é usada para definir os titulos do documento. Ela varia de nivel 1 á 6 (h1, h2, h3, h4, h5 e h6), sendo o 1 mais importante e o 6 menos importante. É recomendado que as páginas tenham somente um h1 por página pois ele representa o titulo principal da página e será muito importante para os mecanismos de busca. Os hs de 2 á 6 podem ser usados livremente respeitando sua ordem de importancia.  </p>
+
+            <p>Exemplo:</p>
+            <h1>Texto exemplo</h1><!--style: fonnt: 2em; margin top e botton de 0.67em e margins left e right 0; font-wegth: bold-->
+            <h2>Texto exemplo</h2><!-- Essa tag só pode ser usado depois da utilização do h1; style: font: 1.5em; margin top e botton de 0.83em e margins left e right 0; font-wegth: bold-->
+            <h3>Texto exemplo</h3><!--style: font: 1.17em; margin top e botton de 0...em e margins left e right 0; font-wegth: bold-->
+            <h4>Texto exemplo</h4><!--style: font: ?em; margin top e botton de 1.33em e margins left e right 0; font-wegth: bold-->
+            <h5>Texto exemplo</h5><!--style: font: 0.83em; margin top e botton de 1.67em e margins left e right 0; font-wegth: bold-->
+            <h6>Texto exemplo</h6><!--style: font: ,67em; margin top e botton de 2.33em e margins left e right 0; font-wegth: bold-->
+        </section>
+        <section id="tag_style"><!--display: none; Possui todos os atr global; -->
+            <h2>Tag 'style'</h2>
+            <p>Define os esctilos CSS da página ou de um elemento espedifico. Posusi os atributos 'media' (que define um estilo de CSS especifico para diferentes aplicações como por exemplo uma impressão - media="print") e 'type' (que define qual o tipo de midia, no caso o padrão é tex/css)</p>
+        </section>
+        <section id="tag_script"><!-- dispaly none;
+            atr: async (define qu o script seja executado de forma assincrona mas só funciona em arquivos externo);
+            atr: charset;
+            atr: defer (o arquivo será executado após a pagina ser carregada - esse atr deve ser definido diretamento no arquivo externo);
+            atr: src (define o caminho do arquivo externo);
+            atr type (define o tipo de midia - text/javaScript);
+
+            <script>alert('No inicio do body')</script>
+                <h1>Page!</h1>
+            <script>alert('No final do body')</script>
+            <script src="js/script.js"></script>
+
+        -->
+            <h2>Tag 'script'</h2>
+            <p>Essa tag serve para inserir scipts no html. É mais usada para colocar codigos JavaScript. É recomendado colocar os codigos JavaScript em um arquivo externo e chama-lo dentro do html. Os scripts podem travar a rederização do documento, então recomenda-se que eles sejam executados por ultimo, para isso deve-se colocar os scripts no final do documento antes do termino da tag body (/body) ou colocar o atr defer (usado para rodar os scripts por ultimo)</p>
+        </section>
+        <section id="tag_div"><!--display block; Style: none-->
+            <h2>Tag 'div'</h2>
+            <p>Essa tag é usada para dividir um conteudo na página ou agrupar tags do documento, não tem valor semantico e serve basicamente para colocar estilos css em uma parte espefica do documento. </p>
+        </section>
+        <section id="tag_span"><!--Style: none; display none-->
+            <h2>Tag 'span'</h2>
+            <p>Essa tag serve basicamente para agrupar texto e colocar um estilo css. Ela não tem estilo e não possui valor semantico.</p>
+        </section>
+        <section id="tag_link"><!--
+            só abre; display none; possui todos atr global; + atr especificos:
+            crosorigin: solicitações de dominios diferentes (anonimos + credenciais de usuario)
+            href: link do doc (caminho do arquivo ou url do site)
+            hreflang: define a linguagem do outro doc que esta sendo lincado;
+            rel: relacionamento do doc atual com o relacionameto do doc que esta sendo vincula (autenate; dns-prefetch, icon, license, next, pingback, preconnect, preload, preender, prev e search stylesheet);
+            media: qual dispositivo se aplica a esse link;
+            size: alturaxlargura
+            type: tipo do doc (image/x-icon - text/css)
+
+        -->
+            <h2>Tag link</h2>
+            <p>Serve para lincar um arquivo externo. pode ser espeficamente um arquivo externo mas tabem pode ser um site ou outas paginas. É comumente usado para lincar arquivos css, favicon e scripts. recomenda-se usar na tag 'head'</p>
+
+            <link rel="stylesheet" href="css/table.css" type="text/css"><!--linca esse doc com um arquivo css externo-->
+            <link rel="alternate" href="link-en" hreflang="en"><!--fornece uma versão alternativa do doc. por exemplo uma versão em texto do site-->
+            <link rel="author" href="https://github.com/joaohcrangel"><!--define uma url para a pagina do autor ou a pagina responsavel pelo doc.-->
+            <link rel="dns-prefetch" href="https://hcode.com.br"><!--ajuda na aceleração da navegação da pagina, carregando outros dominios para otimizar-->
+            <link rel="help" href="https://hcode.com.br/help"><!--pagina fornecedor ajuda para os rederizadores a trazer uma ajuda personalizada para i usuario-->
+            <link rel="icon" href="images/logo.ico" type="image/x-icon"><!--linca um icone favicon com este doc-->
+            <link rel="license" href="https://hcode.com.br/license"><!--pagina com a licença do conteudo presente na página-->
+            <link rel="next" href="https://hcode.com.br/next"><!--se a chanse do usuario ir para uma pagina seguinte for grande, esse link vai ajudar carregando essa pagina em background para otimiza a esperiencia do user-->
+            <link rel="pingback" href="https://hcode.com.br/pingback"><!--para monitorar ou fazer um relatório de qunatas vezes esse link foi acessado.-->
+            <link rel="preconnect" href="https://hcode.com.br/pingback"><!--esse recurso já pre conecta outras paginas, recursos ou sites para otimização-->
+            <link rel="preload" href="images/logo.png" as="image"><!--carrega a pagina ou recurso antecipadamente.-->
+            <link rel="prerender" href="table.html"><!--antecipa o carregamento de recursos-->
+            <link rel="prev" href="https://hcode.com.br/prev"><!--ja carrega uma pagina anterior na paginação para ajufar o usuario.-->
+            <link rel="search" href="open-search.xml"><!--pagina de referencia para buscas-->
+        </section>
+        <section id="tag_noscript"><!---->
+            <h2>Tag 'noscript'</h2>
+            <p>A tag define um conteudo alternativo para uruarios que desativarem scripts no navegador ou quando os scripts não forem suportados. Nesse caso ira mostrar somente o html eu estiver dentro dessa tag, tambem é possivel definir estilos de css especificamente para esses casos.</p>
+
+            <noscript>
+                <p>seu navegardor não suporta javascript</p>
+            </noscript>
+
+        </section>
+        <section id="tag_embad"><!--
+            abre e fecha; style: outline: none.
+            heigth: altura
+            src: caminho
+            type:tipo
+            width: largura
+        -->
+            <h2>Tag 'embad'</h2>
+            <p>Usada para definir um conteudo externo embutido que será reproduzido dentro de um quadro dentro do doc.</p>
+
+            <embed src="swf/dragracer.swf" type="application/x-shockwave-flash" width="1024" height="768"></embed>
+
+        </section>
+        <section id="tag_object"><!--
+            suporta todos os atr global /tem atrs proprios:
+            data: define o caminho do recurso que será usado;
+            form: ela pode ser usada dentro de um formulario;
+            name: define um nome para o objeto;
+            heigth: altura;
+            width; langura/
+            type: qual o tipo de arquivo;
+            map: pode se fazer uma mapa dendro do objeto.
+        -->
+            <h2>Tag 'object'</h2>
+            <p>Tag usada para definir um objeto incorporado no doc. É possivel incorporar audio, video, applets java activex, pdf e etc. Tabem é possivel passar parametros usando a tag 'param' que será vista mais a frente.</p>
+
+            <object data="pdf/Tag_ object.pdf" type="application/pdf" width="600" height="600"></object>
+        </section>
+        <section id="tag_param"><!--
+            Possui todos os atr global /atrs proprio:
+            name: nome do recurso;
+            value: o valor do recurso
+        -->
+            <h2>Tag 'param'</h2>
+            <p>Serve para passar parametros adicinais, geralmente, para a tag object. </p>
+
+            <object data="pdf/Tag_ object.pdf#page3" type="application/pdf" width="600" height="800">
+                <param name="page" value="3">
+            </object>
+
+        </section>
+        <section id="tag_base"><!--
+            todos atr global;
+            atr href: define o alvo;
+            atr target: especifica onde será aberto;
+            <base href="https://www.hcode.com.br" target="_blank">
+
+            <a href="/#/contato">Contato</a>
+        -->
+            <h2>Tag 'base'</h2>
+            <p>É usada para definir uma URL ou domnio padrão dentro do doc. Séra uasdo como base, para todos os links dentro do documento html, o link ou dominio que for declado no tag base. incluindo se será aberto em nova página ou não. só pode haver 1 tag base no doc e sempre deve estar acomphada do seu 'href:' onde será fornecido a URL padrão</p>
+        </section>
+        <section id="tag_iframe"><!--
+            style: iframa:focus= outline: none
+                    iframe[seamless]: Com esse atributo ele ganha (display: block).
+            possui todos os atrs global /atrs proprios;
+            heigth:define a altura do quadro(numero);
+            width:defina a largura(numero);
+            name:define o nome do quadro(URL);
+            sandbox:ativa conteudos restritos por padrão (allow-forms, allow-poiter-lock, allow popups, allow-same-origin, allow scripts, allow-top-navegation);
+            src:define qual fonte do doc a ser embutido(URL);
+            srcdoc:define quala estrutura do doc a ser embutido(HTML);
+        -->
+            <h2>Tag 'iframe'</h2>
+            <p>É usada para definir um quandro embutido na bagina. Esse quadro é usado para incorporar outro html no html atual. É possivel passar o link do html ou simplestmente inserir o html diretamento no quadro. </p>
+            <iframe src="../atributos/atributos.html" width="768" height="600"></iframe>
+        </section>
+        <section id="tag_a"><!--
+            Possui todos os atr global / e atrs proprios:
+            dowload: define que ao inves de abrir, o navegador baixe o arquivo;
+            href: define o caminho do doc ou arquivo que será lincado(URL);
+            hreflang: linguagem do arquivo que esta sendo chamado(ex. 'pt-br');
+            media: define o dispositivo do link de destino(media query);
+            ping: Endereço de rastreio para monitorar cliques no link de destino(URL);
+            referrerpolicy: define qual referencia enviar(no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origni, unsafe-url);
+            rel: define o relacionamento do link que esta sendo chamado, com o doc atual( alternate, author, bookmark, external, help, license, next, nofollow, norerrer, noopener, prev, search, tag);
+            [target]: define onde será aberto( _blank, _paret, _self, _top, nome de um frame);
+            [type]: define o formato do arquivo que será utilizado(nome do tipo);
+            [identificadores]: URI(file, mailto e javascript);
+
+            style: ps[link]: color(blue), text-decoration(underline), corse(pointer); ps[visited]: color(55815b); ps[active]: color(red);
+        -->
+            <h2>Tag 'a'</h2>
+            <p>Essa tag é usada para fazer uma ancora (link) para outra página, recurso ou até mesmo um download. o atributo mais usado é o 'href'.o conteudo da tag é mostrado sublinhado.</p>
+
+            <div><a href="#"><img src="images/logo.png" alt="Imagen logo" style="height: 200px; width: 200px;"></a></div>
+            <div>
+                <a href="comments.html" target="webview">Abrir no frame</a>
+                <iframe name="webview"></iframe>
+            </div>
+            <ul>
+                <li><a href="images/logo.png">Logo</a></li>
+                <li><a href="images/logo.png" download="hcode.png">Download logo</a></li>
+                <li><a href="#" hreflang="pt-br">Canal</a></li>
+                <li><a href="#" target="_blank">Nova pagina</a></li>
+                <li><a href="mailto:contado@hydrahtec.com">Entre em contato</a></li>
+                <li><a href="mailto:contato@hydrahtec.com?subject=Curso de HTML 5 Completo">email Com assunto</a></li>
+                <li><a href="mailto:contato@hydrahtec.com?subject=Curso de HTML 5 Completo&cc=pramin@gmail.com&copia@gmail.com&body=Olá, tudo bem">Email com copia</a></li>
+                <li><a href="tel:+551121497360">Telefone</a></li>
+                <li><a href="javascript:alert('Hello')">Hello!</a></li>
+            </ul>
+        </section>
+        <section id="tag_img"><!--
+            só abre / possui todos os atr global / e atrs priprios:
+            [alt]:Define um texto alternativo para a imagem(text);
+            [crossorigin]: Define como o elemento lida com solicitações de origem cruzada(anonumus, use-credentials);
+            [heigth]: Define a altura da imagem(numero);
+            [ismap]: Define a imagem como um mapa de imagem do lado do servidor(ismap);
+            [longdes]: Define uma descrição detalhada da imagem( o valor desse atr deve ser um 'id'=#id(nome), esse id deve ser colocado no elemento onde estiver a descrição da imagem: 'div' ou 'p');
+            [sizes]: Define tamanhos alternativos da imagem();
+            [src]: Define qual a fonte/link da imagem(URL);
+            [srcset]: Define a URL da imagem em diferentes situações(URL);
+            [usemap]: Define a imagem como um mapa de imagem do lado do usuario(#nomedomapa);
+            [width]: Define a largura da imagem(numero);
+        -->
+            <h2>Tag 'img'</h2>
+            <p>É usada para inserir imagens na página. Os atributos 'src' e 'alt' são obrigatórios.</p>
+            <img src="images/logo.png" alt="Logo Hcode">
+
+            <img src="images/logo.png" alt="Logo Hcode" width="100" height="100">
+
+            <a href="http://127.0.0.1:3000/ismap">
+             <img src="images/logo.png" alt="Logo Hcode" width="100" height="100" ismap>
+            </a>
+
+            <img src="images/logo.png" alt="Logo Hcode" longdesc="#logoDescription">
+
+            <div id="logoDescription">
+                <h2>Image logo.png</h2>
+                <p>Logotipo da Hcode Treinamentos</p>
+            </div>
+
+        </section>
+        <section id="tag_figure"><!--
+            abre e fecha / atr global / style: dispaly(block), margin(1em 40px)
+            não é uma imagem comun. trata-se de uma ilustração por isso deve-se usar a tag 'figcaption' para dar uma breve descrição dela
+        -->
+            <h2>Tag 'figure'</h2>
+            <p>É usada para definir uma foto, ilustração, diagrama e e tc.</p>
+            <figure>
+                <img src="images/logo.png" alt="Logo Hcode">
+                <figcaption>Logotipo da Hcode</figcaption>
+            </figure>
+        </section>
+        <section id="tag_figcaption"><!--
+            <figure>
+                <img src="images/logo.png" alt="Logo Hcode">
+                <figcaption>Logotipo da Hcode</figcaption>
+            </figure>
+        -->
+            <h2>Tag 'figcaption'</h2>
+            <p>Essa tag define uma breve descrição para a ilustração dentro da tag 'figure'</p>
+        </section>
+        <section id="tag_audio"><!--
+            atr global / atr especifico:
+            [autoplay]: Começa a reproduzir assim que os dados do audio estiverem carregados(autoplay);
+            [controls]: Habilita os controles de reprodução do audio;
+            [loop]: Define se o audio deve começar novamente apos terminar;
+            [muted]: Define o volume do audio como mutado;
+            [preload]: Define como o audio deve ser carregada quando a página é carregada(auto, metadata, none);
+        -->
+            <h2>Tag 'audio'</h2>
+            <p>É usado para definir uma musica, son, ou transmição de audio. atualmente suporta os formatos MP3, WAV e OGG. Qualquer texto no conteudo da tag seá exibido em navegadores que não suportam o uso da tag 'audio'.</p>
+            <audio src="audios/How_it_Began.mp3" controls loop muted preload="metadata"></audio>
+
+        </section>
+        <section id="tag_video"><!--
+            atr global / atr proprio(autoplay, controls, loop, muted, preload, src):
+            [poster]: Define uma imagen para ser exibida enquanto o video estiver sendo carregado ou antes do usuario clicar em reproduzir(URL);
+            [heigth]: Define a altura do player(numero);
+            [width]: Define a largura do player(numero);
+        -->
+            <h2>Tag 'video'</h2>
+            <p>É usada para definir um video, filme, ou transmissão de video. atualmente suporta os formatos MP4, WEBM e OGG. Qaulquer texto no conteudo da tag, será exibido se o navegador não surportar a tag 'video'.</p>
+            <video src="videos/AV1_trailer.mp4" controls preload="metadata" height="600" width="750" poster="images/logo.png"></video>
+
+        </section>
+        <section id="tag_source"><!--
+           styl: nenhum / atr global / atr proprio:
+           [src]: Define a fonte externa do source(url);
+           [srcset]: Define uma fonte em situações diferentes(url);
+           [media]: Define em que tipo de midia essa fonte de dados se aplica(tipo de midia - o valor pode ser expresso como lg min ou lg max do device);
+           [sizes]: Degine tamanhos diferentes;
+           [type]: Define o tipo de midia do arquivo;
+        -->
+            <h2>Tag 'source'</h2>
+            <p>Éssa tag é usada para definir varias fontes de midia. Geralmente é usado em cojnunto as tags 'picture' e 'audio'</p>
+
+            <picture>
+                <source media="(min-width: 512px)" srcset="images/logo.png">
+                <source media="(min-width: 256px)" srcset="images/logo256.png">
+                <img src="images/logo64.png" alt="Logo">
+            </picture>
+
+            <audio controls>
+                <source src="audios/How_it_Began.mp3" type="audio/mpeg">
+                <source src="audios/How_it_Began.ogg" type="audio/ogg">
+                Seu navegador não suporte a tag audio.
+            </audio>
+
+        </section>
+        <section id="tag_picture"><!--
+            abre e fecha /
+        -->
+            <h2>Tag 'picture'</h2>
+            <p>É usada para definir mais de uma fonte de imagem. Normalmente usada para mostrar imagens de acordo.</p>
+            <picture>
+                <source media="(min-width: 512px)" srcset="images/logo.png">
+                <source media="(min-width: 256px)" srcset="images/logo256.png">
+                <img src="images/logo64.png" alt="Logo">
+            </picture>
+
+        </section>
+        <section id="tag_track"><!--
+            style: / atr global / atr proprio:
+            [default]: Define se esta é a faixa selecionada por padrão(default);
+            [kind]: Define o tipo de faixa de texto(captions, chapters, description, metadata, subtitle);
+            [label]: Define o rotulo da faixa de texto(NomeDoImput.dir);
+            [srclang]: Define qual é a linguagem dos dados da faixa de texto. Obrigatótio para legendas(código de linguagens);
+
+            <style>
+                video {
+                    width: 100%;
+            }
+            </style>
+        -->
+            <h2>Tag 'track'</h2>
+            <p>É usada para definir uma faixa de text em uma tag de midia. Normalmente usada para definir legendas em videos.</p>
+
+            <video width="600" height="600" muted preload="metadata" src="videos/AV1_trailer.mp4" controls>
+                <track label="Português do Brasil" src="tracks/AV1_trailer_pt.vtt" kind="subtitles" srclang="pt">
+                <track label="Japones" src="tracks/AV1_trailer_jp.vtt" kind="subtitles" srclang="jp">
+            </video>
+
+        </section>
+        <section id="tag_table"><!--
+            Style: display: table; border-colapse: separate; border-spacing: 2px; border-color: gray; / abre e fecha / atr global
+            'tr': Representam as linhas da tabela.
+            'td': Representam as colunas da tabela.
+        -->
+            <h2>Tag 'table'</h2>
+            <p>É usada para definir uma tabela. Não possui atributos prorpios. Apenas a tag table não cria toda a tabela. <br>É necessario usar as tags '<spam class="laranja">tr</spam>' e '<spam class="laranja">td</spam>' para criar as <strong>linhas</strong> e as <strong>celulas</strong>. Uma tabela mais complexa ainda pode conter as tags '<spam class="laranja">caption</spam>' '<spam class="laranja">col</spam>', '<spam class="laranja">colgroup</spam>', '<spam class="laranja">thead</spam>', '<spam class="laranja">tfoot</spam>' e '<spam class="laranja">tdody</spam>'. <br> Historicamente as tabelas eram usadas para criar a layout pa página, porem esse seria um mal uso desta tag
+            </p>
+
+            <table>
+                <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+            </table>
+        </section>
+        <section id="tag_thead"><!--
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Qtd.</th>
+                        <th>Preço</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Camiseta M</td>
+                        <td>1</td>
+                        <td>R$59,90</td>
+                        <td>R$59,90</td>
+                    </tr>
+                    <tr>
+                        <td>Caneca JavaScript</td>
+                        <td>2</td>
+                        <td>R$49,90</td>
+                        <td>R$99,80</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>3</td>
+                        <td colspan="2">R$159,70</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        -->
+            <h2>Tag 'thead'</h2>
+            <p></p>
+        </section>
+        <section id="tag_tbody"><!---->
+            <h2>Tag 'tbody'</h2>
+            <p></p>
+        </section>
+        <section id="tag_tfoot"><!---->
+            <h2>Tag 'tfoot'</h2>
+            <p></p>
+        </section>
+        <section id="tag_th"><!--
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Qtd.</th>
+                        <th>Preço</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Camiseta M</td>
+                        <td>1</td>
+                        <td>R$59,90</td>
+                        <td>R$59,90</td>
+                    </tr>
+                    <tr>
+                        <td>Caneca JavaScript</td>
+                        <td>2</td>
+                        <td>R$49,90</td>
+                        <td>R$99,80</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>3</td>
+                        <td colspan="2">R$159,70</td>
+                    </tr>
+                </tfoot>
+
+    </table>
+        -->
+            <h2>Tag 'th'</h2>
+            <p></p>
+        </section>
+        <section id="tag_template"><!--
+          <template id="tpl-produto">
+                <tr>
+                    <td>Camiseta M</td>
+                    <td>1</td>
+                    <td class="real">59,90</td>
+                    <td class="real">59,90</td>
+                </tr>
+            </template>
+        -->
+            <h2>Tag 'template'</h2>
+            <p></p>
+        </section>
+        <section id="tag_colgroup"><!--
+                <table>
+
+                    <colgroup>
+                        <col span="2" style="background-color:red">
+                        <col style="background-color:yellow">
+                    </colgroup>
+
+                    <tr>
+                        <td>A1</td>
+                        <td>A2</td>
+                        <td>A3</td>
+                    </tr>
+
+                    <tr>
+                        <td>B1</td>
+                        <td>B2</td>
+                        <td>B3</td>
+                    </tr>
+
+                    <tr>
+                        <td>C1</td>
+                        <td>C2</td>
+                        <td>C3</td>
+                    </tr>
+
+                </table>
+        -->
+            <h2>Tag 'colgroup'</h2>
+            <p></p>
+        </section>
+        <section id="tag_col"><!--
+            <table>
+
+                <colgroup>
+                    <col span="2" style="background-color:red">
+                    <col style="background-color:yellow">
+                </colgroup>
+
+                <tr>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A3</td>
+                </tr>
+
+                <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                </tr>
+
+                <tr>
+                    <td>C1</td>
+                    <td>C2</td>
+                    <td>C3</td>
+                </tr>
+
+            </table>
+        -->
+            <h2>Tag 'col'</h2>
+            <p></p>
+        </section>
+        <section id="tag_caption"><!--
+            <table>
+
+                <caption>Minha Tabela</caption>
+
+                <tr>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A3</td>
+                </tr>
+
+                <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                </tr>
+
+                <tr>
+                    <td>C1</td>
+                    <td>C2</td>
+                    <td>C3</td>
+                </tr>
+
+            </table>
+        -->
+            <h2>Tag 'caption'</h2>
+            <p></p>
+        </section>
+        <section id="tag_header"><!---->
+            <h2>Tag 'header'</h2>
+            <p>É usada para definir o cabeçalho da página. Tambem pode definir um cabeçalho relativo ao seu contexto. Normalmente esta tag possui tags de titulo e pode ser colocado um logotipo, icon ou autoria.</p>
+        </section>
+        <section id="tag_main"><!---->
+            <h2>Tag 'main'</h2>
+            <p>Define o conteudo principal do documento. Não deve haver nenhum conteudo repetido na tag main e ela so deve ser usada uma vez na pagina.</p>
+        </section>
+        <section id="tag_footer"><!---->
+            <h2>Tag 'footer'</h2>
+            <p>É usada para definir o rodape da página. Pode ser usada mais de uma vez dependedo do texto. essa tag contém informação sobre direitos autorais, autorias, contato, mapa do site, link para o topo, links para outras páginas.</p>
+        </section>
+        <section id="tag_article"><!---->
+            <h2>Tag 'article'</h2>
+            <p>É usada para defininr como artigo o conteúdo da página. normalmente usado em fóruns, blogs e noticias. Importante para separar semanticamente o conteudo.</p>
+        </section>
+        <section id="tag_section"><!---->
+            <h2>Tag 'section'</h2>
+            <p>É usada para definir uma seção do documento.</p>
+        </section>
+        <section id="tag_aside"><!---->
+            <h2>Tag 'aside'</h2>
+            <p></p>
+        </section>
+        <section id="tag_nav"><!--
+            <nav>
+                <a href="https://www.hcode.com.br">Hcode</a> |
+                <a href="https://youtube.com/c/HcodeBrasil">YouTube</a> |
+                <a href="https://facebook.com/hcodebr">Facebook</a>
+            </nav>
+        -->
+            <h2>Tag 'nav'</h2>
+            <p>Define um conjunto de links de navegação. Ela pode se repetir dependendo do contexto.</p>
+        </section>
+        <section id="tag_address"><!--
+            <address>
+                Hcode Treinamentos<br>
+                Acesse <a href="https://www.hcode.com.br" target="_blank">www.hcode.com.br</a>.<br>
+                Avenida José Versolato, 101<br>
+                12ª andar - Centro<br>
+                São Bernardo do Campo - SP<br>
+                09750-730
+            </address>
+        -->
+            <h2>Tag 'addrres'</h2>
+            <p></p>
+        </section>
+        <section id="tag_datails"><!---->
+            <h2>Tag 'details'</h2>
+            <p>É usada para definir detalhes adicionais que o usuário pode exibir ou ocultar. Qualquer tipo de conteudo pode ser colocado dentro desta tag. Por padrão o conteudo dos detalhes não é exibido para o usuário. Essa tag deve conter um summary dentro dela. Para configurar como abero basta colocar o atributo 'open'.</p>
+            <details>
+                <summary>Hcode</summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ex consequatur eveniet ipsam, doloribus deserunt molestiae numquam aut. Enim sapiente odit tempora quo dolorum harum amet dolore! Dolorum, laborum corrupti.
+                </p>
+            </details>
+        </section>
+        <section id="tag_summary"><!--
+        -->
+        <h2>Tag 'summary'</h2>
+        <p>É usada para definir o cabeçalho visivel dentro da tag 'details'</p>
+        <details>
+            <summary>Hcode</summary>
+            <p>Hcode Treinamentos, acesso o nosso site: https://www.hcode.com.br</p>
+        </details>
+    </section>
+        <section id="tag_ul"><!---->
+            <h2>Tag 'ul'</h2>
+            <p></p>
+        </section>
+        <section id="tag_ol"><!---->
+            <h2>Tag 'ol'</h2>
+            <p></p>
+        </section>
+        <section id="tag_li"><!---->
+            <h2>Tag 'li'</h2>
+            <p></p>
+        </section>
+        <section id="tag_map"><!--
+            <img src="images/logo.png" alt="Logo Hcode" usemap="#mapalogo" width="512" height="512">
+
+            <map name="mapalogo">
+                <area shape="circle" coords="211,263,15" alt="Olho Esquerdo" href="https://hcode.com.br">
+                <area shape="circle" coords="301,263,15" alt="Olho Direito" href="https://youtube.com/c/hcodebrasil">
+            </map>
+        -->
+            <h2>Tag 'map'</h2>
+            <p></p>
+        </section>
+        <section id="tag_area"><!--
+
+        -->
+            <h2>Tag 'area'</h2>
+            <p></p>
+        </section>
+        <section id="tag_abbr"><!---->
+            <h2>Tag 'abbr'</h2>
+            <p></p>
+        </section>
+        <section id="tag_b"><!---->
+            <h2>Tag 'b'</h2>
+            <p></p>
+        </section>
+        <section id="tag_bdi"><!--
+            <p>Hello <bdi>Joao</bdi>!</p>
+            <p>Hello <bdi>جون</bdi>!</p>
+        -->
+            <h2>Tag 'bdi'</h2>
+            <p></p>
+        </section>
+        <section id="tag_bdo"><!--
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus, voluptatum officia quo praesentium libero, dolorum repudiandae quam neque rerum ullam? Incidunt saepe et ratione exercitationem veritatis ipsa aperiam nemo.</p>
+
+            <bdo dir="rtl">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati dolorem rem beatae omnis fugit quaerat totam, vel, ex atque dolore. Voluptates quisquam, mollitia sapiente minus sunt inventore beatae voluptatibus?</p>
+
+            </bdo>
+        -->
+            <h2>Tag 'bdo'</h2>
+            <p></p>
+        </section>
+        <section id="tag_blockquote"><!--
+            <blockquote cite="https://en.wikipedia.org/wiki/HTML">
+                Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+            </blockquote>
+        -->
+            <h2>Tag 'blockquote'</h2>
+            <p></p>
+        </section>
+        <section id="tag_q"><!--
+                <p>Lorem <q cite="https://www.hcode.com.br">ipsum dolor sit amet</q> consectetur adipisicing elit. In assumenda exercitationem voluptate soluta repellendus vero necessitatibus laborum atque, sapiente quisquam! Aspernatur veniam reprehenderit praesentium debitis. Asperiores amet facere iure sapiente!</p>
+        -->
+            <h2>Tag 'q'</h2>
+            <p></p>
+        </section>
+        <section id="tag_br"><!---->
+            <h2>Tag 'br'</h2>
+            <p></p>
+        </section>
+        <section id="tag_wbr"><!--
+            <p>Donau<wbr>dampfschiff<wbr>fahrts<wbr>elektrizitäten<wbr>haupt<wbr>betriebs<wbr>werkbau<wbr>unterbeamten<wbr>gesellschaft</p>
+
+        -->
+            <h2>Tag 'wbr'</h2>
+            <p></p>
+        </section>
+        <section id="tag_cite"><!--
+            <p><cite>Vingadores: Endgame</cite> filme de <time>2019</time> dirigido por <em>Anthony Russo</em> e <em>Joe Russo</em>.</p>
+
+        -->
+            <h2>Tag 'cite'</h2>
+            <p></p>
+        </section>
+        <section id="tag_data"><!--
+            <data value="1">Camiseta P</data>
+            <data value="2">Camiseta M</data>
+            <data value="3">Camiseta G</data>
+        -->
+            <h2>Tag 'data'</h2>
+            <p></p>
+        </section>
+        <section id="tag_del"><!--
+            <p>Lorem ipsum dolor sit amet <del datetime="2019-11-02T16:43:00" cite="https://en.wikipedia.org/wiki/Lorem_ipsum">consectetur</del> <ins>adipisicing</ins> elit. Ex quaerat, asperiores sed, quas porro inventore veniam cum eos sapiente quasi illo provident nobis harum repellendus. Eaque facilis incidunt dicta modi?</p>
+
+        -->
+            <h2>Tag 'del'</h2>
+            <p></p>
+        </section>
+        <section id="tag_ins"><!--
+            <p>Lorem ipsum dolor sit amet <del datetime="2019-11-02T16:43:00" cite="https://en.wikipedia.org/wiki/Lorem_ipsum">consectetur</del> <ins datetime="2019-11-02T16:43:00" cite="https://en.wikipedia.org/wiki/Lorem_ipsum">adipisicing</ins> elit. Ex quaerat, asperiores sed, quas porro inventore veniam cum eos sapiente quasi illo provident nobis harum repellendus. Eaque facilis incidunt dicta modi?</p>
+
+        -->
+            <h2>Tag 'ins'</h2>
+            <p></p>
+        </section>
+        <section id="tag_dfn"><!--
+            <p><dfn>HTML</dfn> é uma linguagem de marcação de hipertexto.</p>
+
+        -->
+            <h2>Tag 'dfn'</h2>
+            <p></p>
+        </section>
+        <section id="tag_em"><!--
+            <p>Lorem, <em>ipsum</em> dolor sit amet consectetur adipisicing elit. Numquam ad et sit temporibus ut nulla non tempora animi officia. Assumenda consequatur saepe tempore minus natus quas ut, aspernatur sint distinctio.</p>
+
+        -->
+            <h2>Tag 'em'</h2>
+            <p></p>
+        </section>
+        <section id="tag_hr"><!--
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis omnis consectetur, sapiente a ratione nobis unde, nesciunt explicabo, sint commodi laudantium enim deserunt necessitatibus ad aspernatur harum expedita est in?</p>
+
+            <hr>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quam explicabo vel doloremque nesciunt nulla obcaecati veniam ducimus, architecto rem similique exercitationem cumque suscipit cupiditate dolore quisquam repudiandae ab possimus.</p>
+        -->
+            <h2>Tag 'hr'</h2>
+            <p></p>
+        </section>
+        <section id="tag_i"><!--
+            <p>Lorem <i>ipsum</i> dolor sit amet consectetur adipisicing elit. Blanditiis velit consequatur accusamus, ut exercitationem autem animi maxime ipsa laborum necessitatibus adipisci quasi, sequi nobis architecto totam! Quo exercitationem debitis nisi.</p>
+
+            <i class="material-icons">emoji_objects</i>
+        -->
+            <h2>Tag 'i'</h2>
+            <p></p>
+        </section>
+        <section id="tag_kbd"><!--
+            <style>
+                kbd {
+                    background-color: #eee;
+                    border-radius: 3px;
+                    border: 1px solid #b4b4b4;
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+                    color: #333;
+                    display: inline-block;
+                    font-size: .85em;
+                    font-weight: 700;
+                    line-height: 1;
+                    padding: 2px 4px;
+                    white-space: nowrap;
+                }
+            </style>
+                <p>Para copiar use <kbd>CTRL</kbd>+<kbd>C</kbd>.</p>
+        -->
+            <h2>Tag 'kbd'</h2>
+            <p></p>
+        </section>
+        <section id="tag_mark"><!--
+            <p>Lorem, <mark>ipsum</mark> dolor sit amet consectetur adipisicing elit. Numquam ad et sit temporibus ut nulla non tempora animi officia. Assumenda consequatur saepe tempore minus natus quas ut, aspernatur sint distinctio.</p>
+
+        -->
+            <h2>Tag 'mark'</h2>
+            <p></p>
+        </section>
+        <section id="tag_ruby"><!--
+            <ruby>
+            明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+            </ruby>
+        -->
+            <h2>Tag 'ruby'</h2>
+            <p></p>
+        </section>
+        <section id="tag_rt"><!--
+            <ruby>
+            明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+            </ruby>
+        -->
+            <h2>Tag 'rt'</h2>
+            <p></p>
+        </section>
+        <section id="tag_s"><!--
+            <p>Lorem <s>ipsum</s> dolor sit amet consectetur, adipisicing elit. Iusto eligendi dignissimos ea delectus recusandae, quo iure libero repudiandae minus ut veritatis nesciunt reprehenderit autem. Et consequuntur ullam sunt voluptatum nulla.</p>
+
+        -->
+            <h2>Tag 's'</h2>
+            <p></p>
+        </section>
+        <section id="tag_small"><!--
+            <h1>Hcode <small>Treinamentos</small></h1>
+            <h2>Hcode <small>Treinamentos</small></h2>
+            <h3>Hcode <small>Treinamentos</small></h3>
+            <h4>Hcode <small>Treinamentos</small></h4>
+            <h5>Hcode <small>Treinamentos</small></h5>
+            <h6>Hcode <small>Treinamentos</small></h6>
+
+            <p>Hcode <small>Treinamentos</small></p>
+        -->
+            <h2>Tag 'small'</h2>
+            <p></p>
+        </section>
+        <section id="tag_strong"><!---->
+            <h2>Tag 'strong'</h2>
+            <p></p>
+        </section>
+        <section id="tag_sub"><!---->
+            <h2>Tag 'sub'</h2>
+            <p></p>
+        </section>
+        <section id="tag_sup"><!---->
+            <h2>Tag 'sup'</h2>
+            <p></p>
+        </section>
+        <section id="tag_time"><!--
+            <p>Agora é <time>1:25</time>.</p>
+        -->
+            <h2>Tag 'time'</h2>
+            <p></p>
+        </section>
+        <section id="tag_u"><!--
+            <p>Lorem <u>ipsum</u> dolor sit amet consectetur adipisicing elit. Optio alias, voluptates quia doloremque aspernatur debitis tempora hic corrupti veritatis labore ratione, quod ullam velit architecto voluptatibus nesciunt repellendus eaque! Odio?</p>
+        -->
+            <h2>Tag 'u'</h2>
+            <p></p>
+        </section>
+        <section id="tag_pre"><!---->
+            <h2>Tag 'pre'</h2>
+            <p>É usada para definir um texto pré-formatado. Ela preserva os espaços e quebras de linha.</p>
+
+            <p>
+                hcode
+                treinamento
+            </p>
+            <pre>
+                hcode
+                treinamentos
+            </pre>
+        </section>
+        <section id="tag_samp"><!--
+            <p>Estou tentando ligar meu computador, mas está aprarecendo a mensagem:</p>
+
+            <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+        -->
+            <h2>Tag 'samp'</h2>
+            <p></p>
+        </section>
+        <section id="tag_var"><!--
+            <p>Ache o valor de <var>x</var>:</p>
+        -->
+            <h2>Tag 'var'</h2>
+            <p></p>
+        </section>
+        <section id="tag_code"><!---->
+            <h2>Tag 'code'</h2>
+            <p>É usada para definir parte um texto como parte de um código de computador</p>
+            <code>$names = ['joão', 'Glaucio', Djalma];</code>
+        </section>
+        <section id="tag_dl"><!--
+            <dl>
+                <dt>Title</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+                <dt>Title</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+                <dt>Title</dt>
+                <dd>Lorem ipsum dolor sit amet.</dd>
+            </dl>
+        -->
+            <h2>Tag 'dl'</h2>
+            <p></p>
+        </section>
+        <section id="tag_dt"><!---->
+            <h2>Tag 'dt'</h2>
+            <p></p>
+        </section>
+        <section id="tag_form"><!---->
+        <h2>Tag 'form'</h2>
+        <p>É usada para definir um formulário. Eles agrupam campos de entrada de dados dos usuários. Eles permitem que o usuario informem dados em uma página. Formulários podem ser usados em uma variedade de contextos. Páginas de contato, login e cadastro, são alguns exemplos de uso de formulário.</p>
+        <p>Para que a tag form funcione, é necessario ter pelomenos um campo de texto e um botão. Essa tag abre e fecha, portanto possui cnoteudo dentro dela. Ela possui um atributo importante chamado "action" esse atributo defina para qual URL os dados serão enviados. </p>
+        <ul>
+            <li type="square"><strong>accept-charset</strong> - (Define o encode usado para enviar o formulário- charset)</li>
+            <li type="square"><strong>action</strong> - (Define para qual URl o formulário será enviado - URl * Quando não informamos o atributo action na tag form o formulário não é enviado para o back-end, mas sim para a própria página em que se encontra.)</li>
+            <li type="square"><strong>autocomplete</strong> - (Define se os campos terão a função autocompletar habilitado - on, off.)</li>
+            <li type="square"><strong>enctype</strong> - (Define qual codificação de formulário será usada - application/x-www-form-urllencoded, multipart/form-data, text/plain)</li>
+            <li type="square"><strong>method</strong> - (Define qual será o metodo de envio do formulário - get, post)</li>
+                <ul>
+                    <li><strong>"get"</strong>Nesse metodo os dados que forem enviados vão aparecer na barra de endereços. não é um metodo seguro portanto só é indicado utilizar quando estiver trabalhando com dados não sensiveis</li>
+                    <li><strong>"post"</strong> Nesse metodo os dados não aparecem na URL, é suguro e indicado para dados sensiveis como senhas  dados de usuario.</li>
+                </ul>
+            <li type="square"><strong>name</strong> - (Define qual o nome do formulário)</li>
+            <li type="square"><strong>novalidate</strong> - (Define se deve ser validado ao enviar)</li>
+            <li type="square"><strong>target</strong> - (Define qual o alvo ao enviar o formulário)</li>
+            <li type="square"><strong>cols</strong> - ()</li>
+            <li type="square"><strong>rows</strong> - ()</li>
+
+        </ul>
+        <h3>Tag 'textarea'</h3>
+        <p>Trata-se de um cmapo usado para textos grandes como comentarios, mensagens ou sugestões. Atraves do atributo 'name' o back-end tem acesso a esse campo e seus dados</p>
+        <div>
+            <form action="/send" method="post">
+                <input type="text" name="campo" placeholder="campo">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="sugestao">
+            <h3>Caixa de sugestão</h3>
+
+            <form action="https://www.meucodigo.com.br/sugestao.php">
+                <textarea name="sugestao" id="sugestao" cols="30" rows="10"></textarea>
+                <button type="submit">Enviar sugestão</button>
+            </form>
+        </div>
+
+        </section>
+        <section id="tag_input"><!--
+            <input type="image" src="images/logo.png" width="50" height="50">
+            <input type="url" value="https://www.hcode.com.br" readonly>
+        -->
+            <h2>Tag 'input'</h2>
+            <p>Tag usada para definir um campo de entrada. <br> Um campo de entrada serve para o usuario inserir dados ou interragir com a pagina. <br>A tag pode variar de várias maneiras dependendo do atributo type. <br> Aceita todos os atributos globais e possui muitos atributos adicionais:</p>
+            <h3>Atributos da tag input</h3>
+            <ul>
+                <li type="circle"><strong>accept</strong> - (Define o tipo de arquivo aceito para ser selecionado - se aplica apenas quando o atributo 'type' tem o valor 'file' - extensão ou tipo de arquivo)</li>
+                <li type="circle"><strong>alt</strong> - (Define um texto alterntivo - usado apenas quando o atributo 'type' tem o valor 'img' - texto.)</li>
+                <li type="circle"><strong>autocomplete</strong> - (Define se o campo pode ter habilitado o auto completar do navegador - espera-se 'on' ou 'off'.)</li>
+                <li type="circle"><strong>autofocus</strong> - (Define o foco neste campo quando a página é carregada - 'autofocus')</li>
+                <li type="circle"><strong>checked</strong> - (Define se o campo esta marcado/selecionado. - Se aplica apenas quando o atributo type tem o valor 'checkbox' ou 'radio' - checked)</li>
+                <li type="circle"><strong>dirname</strong> - (Define o nome do campo que será enviado informando a direção do texto escrito - NomeDoInput.dir)</li>
+                <li type="circle"><strong>disable</strong> - (Define o campo como desabilitado - disable.)</li>
+                <li type="circle"><strong>form</strong> - (Define qual o formulário que este campo pertence - ID do formulário.)</li>
+                <li type="circle"><strong>formaction</strong> - (Define qual a URL de envio desse campo. Se aplica apenas qunado o atributo 'type' tem o valor 'submit' ou 'image'. - URL)</li>
+                <li type="circle"><strong>formenctype</strong> - (Define o enctype do formulário ao enviar este campo. Se aplica apenas qunado o atributo 'type' tem o valor 'submit' ou 'image' - application/x-www-form-urllencoded, multipart/form-data, text/plain.)</li>
+                <li type="circle"><strong>formmethod</strong> - (Define qual será o metodo do formulário ao clicar neste botão. Se aplica apenas quando o atributo 'type' tem o valor 'submit' ou 'image' - get, post)</li>
+                <li type="circle"><strong>formnovalidate</strong> - (Desativa a validação do formulário ao clocar nesse botão.)</li>
+                <li type="circle"><strong>formtarget</strong> - (Define qual será o target do formulário ao clicar nesse botão. apenas quando for 'submit' ou 'image' - _blanck, _self, _parent, _top, nome do frame.)</li>
+                <li type="circle"><strong>height</strong> - (Define a altura do campo. apenas quando for 'image' - numero.)</li>
+                <li type="circle"><strong>list</strong> - (Define qual tag 'datalist' esta vinculada com este campo. Nós podemos faver nosso proprio autocompletar criando uma lista especifica e vinculando ela dentro do input. - ID do datalist)</li>
+                <li type="circle"><strong>max</strong> - (Define um valor maximo - numero ou data)</li>
+                <li type="circle"><strong>maxlength</strong> - (Define um comprimento maxiomo de caracteres - numero)</li>
+                <li type="circle"><strong>min</strong> - (Define um valor minimo - numero ou data)</li>
+                <li type="circle"><strong>multiple</strong> - (Define se o usuario pode entrar com mais de um valor neste campo. Apenas quando for 'file' - multiple)</li>
+                <li type="circle"><strong>name</strong> - (Define o nome do campo - texto)</li>
+                <li type="circle"><strong>pattern</strong> - (Define uma expressão regular para validação do campo - expressão regular.)</li>
+                <li type="circle"><strong>placeholder</strong> - (Define um texto de dica que descreve o valor esperado - texto)</li>
+                <li type="circle"><strong>readonly</strong> - (Defineo campo como somente leitura)</li>
+                <li type="circle"><strong>required</strong> - (Define o campo como obrigatótio para o envio do formulário.)</li>
+                <li type="circle"><strong>size</strong> - (Define a largura em caracteres do campo. - numero)</li>
+                <li type="circle"><strong>src</strong> - (Define a fonte do arquivo. apenas quando for image - URL)</li>
+                <li type="circle"><strong>step</strong> - (Define o intervalo de numero permitidos. apenas qunado for number. - numero)</li>
+                <li type="circle"><strong>type</strong> - (Define o tipo do campo. <strong>button, checkbox, color, data, datetime-local, password, radio, range, reset, number, email, file, hidden, image, month, search, tel, text, time, url e week</strong> )</li>
+                <li type="circle"><strong>value</strong> - (Define o valor inicial do campo)</li>
+                <li type="circle"><strong>width</strong> - (Define a largura do campo. apenas quando for image. - numero)</li>
+            </ul>
+            <h3>Tipos de input</h3>
+            <ul>
+                <li type="squere">type: <strong>text</strong> - ( <input type="text" placeholder="Digine um nome" value="joão"> )</li>
+                <li type="square">type: <strong>checkbox</strong> - ( <input type="checkbox" name="option" checked value="1" placeholder="box"> + <input type="checkbox" name="option" checked value="2" placeholder="box"> )</li>
+                <li type="square">type: <strong>radio</strong> - ( <input type="radio" name="gender" value="M" placeholder="M"> ou <input type="radio" name="gender" value="F" placeholder="F"> )</li>
+                <li type="square">type: <strong>color</strong> - ( <input type="color" value="#fff" placeholder="Escolha uma cor"> )</li>
+                <li type="square">type: <strong>date</strong> - ( <input type="date" placeholder="data" > )</li>
+                <li type="square">type: <strong>datetime-local</strong> - ( <input type="datetime-local" placeholder="hora"> )</li>
+                <li type="square">type: <strong>email</strong> - ( <input type="email" placeholder="email" > )</li>
+                <li type="square">type: <strong>submit</strong> - ( <input type="submit" name="enviar" placeholder="enviar" value="ok"> )</li>
+                <li type="square">type: <strong>file</strong> - ( <input type="file" name="arquivos" placeholder="arquivos" accept="image/png" multiple> )</li>
+                <li type="square">type: <strong>hidden</strong> - ( <input type="hidden" name="id" value="999"> )</li>
+                <li type="square">type: <strong>month</strong> - ( <input type="month" name="mes" placeholder="selecione um mes"> )</li>
+                <li type="square">type: <strong>number</strong> - ( <input type="number" name="numero" placeholder="Digite um numero" step=".5"> )</li>
+                <li type="square">type: <strong>password</strong> - ( <input type="password" name="senha" placeholder="Digite a senha"> )</li>
+                <li type="square">type: <strong>reset</strong> - ( <input type="reset" value="Limpar" placeholder="limpar"> )</li>
+                <li type="square">type: <strong>button</strong> - ( <input type="button" value="Salvar" placeholder="salvar"> )</li>
+                <li type="square">type: <strong>search</strong> - ( <input type="search" name="busca" placeholder="busca"> )</li>
+                <li type="square">type: <strong>tel</strong> - ( <input type="tel" name="numero tel" placeholder="Digite seu telefone"> )</li>
+                <li type="square">type: <strong>time</strong> - ( <input type="time" name="horas" placeholder="Escolha o horario"> )</li>
+                <li type="square">type: <strong>URL</strong> - ( <input type="url" name="site" placeholder="Digite a URL"> )</li>
+                <li type="square">type: <strong>week</strong> - ( <input type="week" name="semana" placeholder="Escolha a semana"> )</li>
+                <li type="square">type: <strong>renge</strong> - ( <input type="range" name="volume" placeholder="volume" min="0" max="100" value="50"> )</li>
+            </ul>
+        </section>
+        <section id="tag_dd"><!---->
+            <h2>Tag 'dd'</h2>
+            <p></p>
+        </section>
+        <section id="tag_button"><!---->
+            <h2>Tag 'button'</h2>
+            <p>É usada para definir um botão clicavel. Dentro dela pode ser colocado conteúdo como texto ou imagem. è necessario sempre especificar o atributo 'type'. Cada navegador pode usar um padrão especifico para o atributo 'type'. <br> Possui os atributos: <strong>autofocus, disable, form, formaction, formenctype, formmethod, formnovalidate, formtarget, name, type(buttom, reset, submit), value.</strong></p>
+            <form id="hcode">
+                <input type="text" name="name" id="hcode" placeholder="nome hcode">
+            </form>
+            <button type="button" form="hcode">Botão</button>
+            <button type="reset" form="hcode">Limpar</button>
+            <button type="submit" form="hcode">Enviar</button>
+        </section>
+        <section id="tag_fieldset"><!--
+            <fieldset>
+                <legend>Endereço</legend>
+                <div>
+                    CEP: <input type="text">
+                </div>
+                <div>
+                    Endereço: <input type="text">
+                </div>
+                <div>
+                    Bairro: <input type="text">
+                </div>
+                <div>
+                    Cidade: <input type="text">
+                </div>
+                <div>
+                    Estado: <input type="text">
+                </div>
+                <div>
+                    País: <input type="text">
+                </div>
+            </fieldset>
+        -->
+            <h2>Tag 'fieldset'</h2>
+            <p></p>
+        </section>
+        <section id="tag_legend"><!---->
+            <h2>Tag 'legend'</h2>
+            <p></p>
+        </section>
+        <section id="tag_select"><!--
+            <select>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+                <option>Bahia</option>
+            </select>
+        -->
+            <h2>Tag 'select'</h2>
+            <p></p>
+        </section>
+        <section id="tag_option"><!--
+            <select>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+                <option>Bahia</option>
+            </select>
+        -->
+            <h2>Tag 'option'</h2>
+            <p></p>
+        </section>
+        <section id="tag_optgroup"><!--
+            <select>
+                <optgroup label="Front-end">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </optgroup>
+                <optgroup label="Back-end">
+                    <option>PHP</option>
+                    <option>Node.js</option>
+                    <option>MySQL</option>
+                </optgroup>
+            </select>
+        -->
+            <h2>Tag 'optgroup'</h2>
+            <p></p>
+        </section>
+        <section id="tag_datalist"><!---->
+            <h2>Tag 'datalist'</h2>
+            <p>É usada para definir uma lista de opções para um input. O 'ID' desta tag é usado no atributo 'list' da tag 'input' para validação. Muito parecido com um autocompletar.</p>
+            <input type="text" name="lista" placeholder="Escolha uma opção" list="listaop">
+
+            <datalist id="listaop">
+                <option>opção 01</option>
+                <option>opção 02</option>
+                <option>opção 03</option>
+            </datalist>
+        </section>
+        <section id="tag_textarea"><!--
+            <textarea name="mensagem" cols="30" rows="10"></textarea>
+        -->
+            <h2>Tag 'textarea'</h2>
+            <p></p>
+        </section>
+        <section id="tag_dialog"><!---->
+            <h2>Tag 'dialog'</h2>
+            <p></p>
+        </section>
+        <section id="tag_output"><!---->
+            <h2>Tag 'output'</h2>
+            <p>É usada para mostrar o resultado de um calculo. Possui os atributos: <strong>For( relação entre o resultado e os elemtno usados para o calculo), form (qual formulário que essa campo pertence) e name (define um nome para o elemento)</strong></p>
+
+            <form oninput="c.value= Number(a.value) + Number(b.value)">
+                <input type="range" id="a" placeholder="numero 01" value="0">+
+                <input type="number" id="b" placeholder="numeor 02" min="0" max="100" value="0">=
+                <output name="c" for="a b">0</output>
+            </form>
+        </section>
+        <section id="tag_meter"><!--
+            <meter value="2" min="0" max="10">2 out of 10</meter><br>
+            <meter value="0.6">60%</meter>
+        -->
+            <h2>Tag 'meter'</h2>
+            <p></p>
+        </section>
+        <section id="tag_progress"><!--
+                <progress value="50" max="100"></progress>
+        -->
+            <h2>Tag 'progress'</h2>
+            <p></p>
+        </section>
+        <section id="tag_canvas"><!--
+            <canvas id="meu-canvas" width="500" height="500"></canvas>
+            <script>
+                const canvasEl = document.querySelector('#meu-canvas');
+                const context = canvasEl.getContext('2d');
+
+                context.fillStyle = '#000000';
+                context.fillRect(0, 0, 100, 100);
+            </script>
+        -->
+            <h2>Tag 'canvas'</h2>
+            <p></p>
+        </section>
+        <section id="tag_svg"><!--
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+
+            <img src="images/circle.png">
+
+            <img src="images/circle.svg">
+
+            <img src="images/logo.svg">
+        -->
+            <h2>Tag 'svg'</h2>
+            <p></p>
+        </section>
+        <section id="tag_hgroup"><!--
+            section {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            hgroup {
+                text-align: right;
+                font-family: Verdana, sans-serif;
+                padding-right: 16px;
+                border-right: 10px solid #f37520;
+            }
+
+            h1 {
+                font-size: 1.93rem;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                font-size: 1.16rem;
+                margin-top: 0;
+            }
+
+            p {
+                text-align: justify;
+                font-family: Georgia, serif;
+                font-size: .95rem;
+            }
+
+            .first::first-letter {
+                font-size: 3.2rem;
+                line-height: .7;
+                float: left;
+                padding-right: 8px;
+                padding-top: 4px;
+            }
+            </style>
+
+            <section>
+                <hgroup>
+                    <h1>HTML 5</h1>
+                    <h2>Introdução</h2>
+                </hgroup>
+                <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aspernatur accusantium ipsam aliquid omnis eaque dolore sint id rem, optio tempore! Recusandae nihil delectus deserunt cupiditate. Rerum blanditiis rem a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aspernatur accusantium ipsam aliquid omnis eaque dolore sint id rem, optio tempore! Recusandae nihil delectus deserunt cupiditate. Rerum blanditiis rem a?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aspernatur accusantium ipsam aliquid omnis eaque dolore sint id rem, optio tempore! Recusandae nihil delectus deserunt cupiditate. Rerum blanditiis rem a?</p>
+            </section>
+        -->
+            <h2>Tag 'hgroup'</h2>
+            <p></p>
+        </section>
+        <section id="tag_marquee"><!--
+            <marquee>Hcode Treinamentos</marquee>
+
+            <marquee direction="up">Hcode Treinamentos</marquee>
+
+            <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+                <marquee behavior="alternate">
+                    Hcode Treinamentos
+                </marquee>
+            </marquee>
+        -->
+            <h2>Tag 'marquee'</h2>
+            <p></p>
+        </section>
+        <section id="tag_rp"><!--
+
+        -->
+            <h2>Tag 'rp'</h2>
+            <p></p>
+        </section>
+        <section id="tag_td-colspan-rowspan"><!--
+            <style>
+                td {
+                    border: #CCC 1px solid;
+                    padding: 1em;
+            }
+            </style>
+            <table>
+
+                <tr>
+                    <td colspan="3">A1 - A3</td>
+                </tr>
+
+                <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td rowspan="2">B3</td>
+                </tr>
+
+                <tr>
+                    <td>C1</td>
+                    <td>C2</td>
+                </tr>
+
+            </table>
+        -->
+            <h2>Tag 'td-colspan-rowspan</h2>
+            <p></p>
+        </section>
+        <section id="tag_td-headers"><!--
+            <table>
+
+                <tr>
+                    <th id="name">Nome</th>
+                    <th id="email">E-mail</th>
+                    <th id="phone">Telefone</th>
+                </tr>
+
+                <tr>
+                    <td headers="name">Joao</td>
+                    <td headers="email">joao@hcode.com.br</td>
+                    <td headers="phone">11912345678</td>
+                </tr>
+
+                <tr>
+                    <td headers="name">Glaucio</td>
+                    <td headers="email">glaucio@hcode.com.br</td>
+                    <td headers="phone">11912345678</td>
+                </tr>
+
+                <tr>
+                    <td headers="name">Djalma</td>
+                    <td headers="email">djalma@hcode.com.br</td>
+                    <td headers="phone">11912345678</td>
+                </tr>
+
+            </table>
+        -->
+            <h2>Tag 'td-headers'</h2>
+            <p></p>
+        </section>
+    </main>
+    <footer><!---->
+        <p>Desenvoldivo por Hydrah Technology</p>
+    </footer>
+</body>
+</html>
