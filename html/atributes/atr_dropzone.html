@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop zone</title>
+    <link rel="shortcut icon" href="../image/nerd.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../hcode.css" />
+    <style>
+      .box {
+        background-color: chocolate;
+        width: 100px;
+        height: 100px;
+        margin: 3px;
+      }
+      .drop {
+        background-color: blanchedalmond;
+        border: 2px dashed cadetblue;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Curso HTML plataforma Hcode</h1>
+      <nav>
+        <a href="atributos.html">Atributos</a>
+        <a href="#">Eventos</a>
+        <a href="#">Tags</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Atributo global - Dropzone</h2>
+        <p>
+          Esse atributo define o que acontece quando o elemento arrastado é
+          solto nesse elemento.
+        </p>
+        <div>
+          <h4>Exemplo itens arrastavel:</h4>
+          <div class="box" draggable="true"></div>
+          <button draggable="true">OK</button>
+        </div>
+        <h4>Caixa Dropzone</h4>
+        <div class="drop" dropzone="copy"></div>
+        <p>
+          Como esse recurso ainda não esta 100% definido, é necessario usar
+          javascript para copiar ou mover o elemento arrastado.
+        </p>
+        <h4>Codigo:</h4>
+        <img src="../image/ptdropzone.png" alt="Codigo Dropzone" />
+      </section>
+    </main>
+    <footer>
+      <a href="atributos.html" target="_self"
+        ><img src="../image/voltar.png" alt="Voltar"
+      /></a>
+    </footer>
+  </body>
+</html>

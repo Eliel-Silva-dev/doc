@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop zone-js</title>
+    <link rel="shortcut icon" href="../image/nerd.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../hcode.css">
+    <style>
+        .box {
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+            color: white;
+            margin: 2px;
+        }
+        #box-2 {
+            background-color: blueviolet;
+        }
+        .drop {
+            background-color: blanchedalmond;
+            border: 2px dashed cadetblue;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso HTML plataforma Hcode</h1>
+        <nav>
+            <a href="atributos.html">Atributos</a>
+            <a href="#">Eventos</a>
+            <a href="#">Tags</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <section>
+                <h2>Atributo global - Dropzone-js</h2>
+                <p>Esse atributo define o que acontece quando o elemento arrastado é solto nesse elemento.</p>
+
+                <h4>Caixa Dropzone</h4>
+                <div class="drop" dropzone="copy">
+                    <div id="box-1" class="box" draggable="true">Arraste</div>
+                    <div id="box-2" class="box" draggable="true">Arraste</div>
+                </div>
+
+                <h4>Caixa Dropzone</h4>
+                <div>
+                    <div class="drop" dropzone="copy"></div>
+                </div>
+
+                <script>
+
+                    const divsBox = document.querySelectorAll('.box');
+                    const divsDrop = document.querySelectorAll('.drop');
+
+                    divsBox.forEach(divBox => {
+
+                        divBox.addEventListener('dragstart', e => {
+
+                            e.dataTransfer.setData('Text', e.target.id);
+
+                        });
+
+                    });
+
+                    divsDrop.forEach(divDrop => {
+
+                        divDrop.addEventListener('dragover', e => {
+
+                            e.preventDefault();
+
+                        });
+
+                        divDrop.addEventListener('drop', e => {
+
+                            const elementId = event.dataTransfer.getData("Text");
+                            const element = document.getElementById(elementId);
+
+                            e.target.appendChild(element);
+
+                        });
+
+                    });
+
+                </script>
+                <h4>Codigo CSS:</h4>
+                <img src="../image/ptdropzonejsCSS.png" alt="Codigo CSS">
+                <h4>Codigo HTML:</h4>
+                <img src="../image/ptdropzonejshtml.png" alt="Codigo HTML">
+                <h4>Codigo javascript</h4>
+                <img src="../image/ptdropzonejsjava.png" alt="Codigo javascript">
+            </section>
+    </main>
+    <footer>
+        <a href="atributos.html" target="_self"><img src="../image/voltar.png" alt="Voltar"></a>
+    </footer>
+</body>
+</html>
