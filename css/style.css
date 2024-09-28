@@ -1,0 +1,684 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*=========================================*/
+/*Cascading style sheets
+recomenda-se usar os estilos css em arquivos separados.
+geralmente cria-se um arquivo css principal com nome style.css ou main.css, para abrager os estilos mais gerais de fonte, titulos, layaut..., e outros arquivos css com nomes diferentes criados para estilizar coisas especificas.
+
+==> elemtentos com display inline não aceitam propriedades do tipo margin, heigth... os boxes ocuoam somente o tamanho do conteudo. para contornar isso é preciso mudar o dispalay pra inline-block.
+
+==> https://picsum.photos/200
+
+site de imagem gratis aleartorias para testes nos projetos
+
+==> !important burla a ordem de prioridade do css
+
+==> atentar para os niveis de especivicidade dos seletores.
+quanto mais seletores usar para selecionar um elemento mais dificil será para atribuir novos valores durante o decorrer do codigo. mantenha o mesmo nivel de seleção
+*/
+
+.seletoes {
+  /*
+    # Representa ID em CSS
+    . Representa Class em CSS
+    : Representa uma pseudo classe - elas representão um estado.
+    :: Representa um psideudo elemento
+    > significa filho de um determinado seletor
+*/
+  /*agrupando seletores
+    seletorA, seletorB, ...{}
+    seletorPai seletorFilho ... {}
+    .classPai tagFilho
+    .classPai tagFilho tagFilho ... {}
+    .classPai tagFilho, seletorC ... {}
+    */
+  /*é posivel utilizar mais de uma classes nas tegs html, basta separa-las com espaço*/
+  /*Os elementos filhos erdão as caracteristicas(estilos) dos pais*/
+}
+.margem {
+  /*Adiciona espaço na parte externa da caixa
+    margin: auto nas laterais, centraliza o elemento na tela
+
+    */
+  margin: 0px;
+  margin-top: 0px; /*cima*/
+  margin-right: 0px; /*direita*/
+  margin-bottom: 0px; /*baixo*/
+  margin-left: 0px; /*esquerda*/
+}
+
+.tamanho {
+  width: 100px, auto, max-content, calc(); /*largura*/
+  max-width: 0px; /*maxima largura*/
+  min-width: none; /*minima largura*/
+  height: 100px; /*altura*/
+  max-height: 0px; /*maxima altura*/
+  min-height: auto; /*minima altura*/
+
+  overflow: scroll;
+  /*
+    O uso de overflow nos permite criar barras de rolagem para adicionarmos conteúdos maiores dentro de áreas menores sem que isso quebre a página e sem ter que remover parte do conteúdo.
+    */
+
+  box-sizing: border-box;
+  /*
+    muda a forma de calcular a largura da caixa, subtraindo margin e padding da largura especificada.
+    */
+
+  /*
+    treinar medidas relativas:display:
+    https://www.devmedia.com.br/view/viewaula.php?idcomp=43343
+
+    */
+}
+.pading {
+  /*Adiciona espaço na parte interna da caixa*/
+  padding: 0px;
+  padding-top: 0px; /*cima*/
+  padding-right: 0px; /*direita*/
+  padding-bottom: 0px; /*baixo*/
+  padding-left: 0px; /*esquerda*/
+}
+.borda {
+  border: 0px solid red;
+  border-width: 0px;
+  border-style: dashed; /*o estilo é obrigatorio*/
+  border-radius: 0%;
+  /*
+   canto superior esquerdo
+   canto superior direito
+   canto inferior direito
+   canto inferior esquerdo
+   */
+  border-color: brown;
+}
+.shadow {
+  box-shadow: 10px 20px 30px 40px #ff0000 inset;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.19), 0 6px 20px 0 rgb(0, 0, 0, 0.2); /*padrão para cards*/
+  /*
+    os 2 primeiros são descolamento x e y
+    deopis o desfoque
+    depois a expansão (se optar por usala é necessario informar o desfoque)
+    depois a cor
+    por ultimo inset (muda a sobra de tras para a frente).
+
+    Os valores de cor e o valor inset podem aparecer no início e no fim do box-shadow, mas nunca entre os valores numéricos de deslocamento, desfoque e expansão.
+
+    valores negativos no descolacameno vai colocar as sombras na parte superior e esquerda.
+    */
+  /*
+    teste: https://www.devmedia.com.br/view/viewaula.php?idcomp=43348
+    */
+
+  text-shadow: 3px 3px 5px red, 0 0 3 blue;
+  /*
+    da para colocar mais de uma sombra no elemento.
+    pesquisar por modelos na net
+    */
+}
+
+.tipo_texto {
+  text-align: center;
+  text-decoration: dashed;
+  /*
+   principais valores:display:
+   Underline: em baixo
+   overline: em cima
+   line-through: riscando o texto
+   none: nenhum
+   */
+  text-transform: capitalize;
+  /*
+   pode transformar o texto por exemplo para maiscula, minuscula ou a primeira letra maiuscula.
+   */
+  text-overflow: clip;
+  text-indent: 0; /*recua a primeira linha do texto*/
+  list-style: none;
+  line-height: 1.5px; /*altura da linha*/
+  line-break: auto;
+
+  letter-spacing: -5px; /*estabelece um espaçamento entre as letras.*/
+
+  word-spacing: 15px; /*espaço entre as palavras*/
+
+  list-style-type: none; /*returia os desenhos das lista desordenadas*/
+}
+
+.fontes {
+  font: 100, 900, bold, caption, italic, large, normal, oblique, small, calc();
+  font-size: 0%, large, medium, small;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400px; /*peso da finte 400 = normal*/
+  font-style: italic, normal, oblique;
+  font-display: inherit, initial, unset;
+  font-variant: normal, small-caps;
+  font-stretch: condensed, expanded;
+  font-feature-settings: "aalt";
+  font-kerning: auto;
+
+  /*fontes padrão:
+Arial, Verdana, Helvetica, Trebuchet MS, Georgia, Courier New, Comic Sans MS, Brush Script MT, Impact, Lucida Sans, Constantia.
+*/
+
+  @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+  @font-face {
+    font-family: "Minha fonta";
+    src: url("littlebird.ttf");
+  }
+}
+
+.cor {
+  color: aqua;
+  /*
+ tipos de cor:
+ rgb: RGB(0-255,0-255,0-255) (red, green, blue)
+ hexadecimal: #ffffff
+ nominal: blue
+
+ plataformas e ferramentas para identificar cores:
+
+ Site Pick Color From Image: https://imagecolorpicker.com/
+ */
+}
+
+.back-ground {
+  /*
+
+    */
+  background: 0;
+  background-color: darkturquoise;
+  background-image: url("src");
+  background-image: linear-gradient(45deg, blue, rgb(40, 108, 255));
+  background-image: radial-gradient(blue, rgb(40, 108, 255));
+  background-position: top;
+  /*
+        background-position: top;
+        background-position: center;
+        background-position: bottom;
+        background-position: right top;
+        background-position: right center;
+        background-position: right bottom;
+        background-position: center top;
+        background-position: center center;
+        background-position: center bottom;
+    */
+  background-repeat: repeat;
+  /*
+    repeat
+    norepeat
+    repeat-x
+    repeat-y
+    */
+  background-size: contain;
+  /*
+    contain:  faz com que a imagem ocupe todo o espaço disponível, sem que para isso ela seja cortada ou distorcida.
+    cover: permite escalar a imagem de forma que ela se torna tão larga quanto o necessário para cobrir todo o espaço interno do elemento.
+    */
+  background-attachment: fixed;
+  /*
+    A propriedade background-attachment permite controlar como uma imagem se comporta em relação a barra de rolagem da página ou do elemento no qual ela está contida.
+
+     efeito paralax:
+    https://www.devmedia.com.br/view/viewaula.php?idcomp=43295
+    */
+}
+
+.displai {
+  display: block;
+  /*
+    dispoe os elementos em blocos ocupando a largura toda*/
+  display: inline;
+  /*
+    dispoe os elementos em linha, ocupa somente o espaço necessario*/
+  display: flex;
+  /*
+    dispoe elementos de forma flex podendo ficar em linha ou coluna.  */
+  display: none;
+  /*
+    some com o elemento, até mesmo o espaço reservado a ele é ocultado da tela*/
+
+  visibility: hidden;
+  /*
+    o conteudo do elemento fica invisivel mas seu espaço ainda fica visivel na tela
+    */
+
+  opacity: 100px;
+  /*
+    quanto menor o valor, mais transparente o elemento se torna.
+    */
+}
+
+.posicionamento {
+  position: absolute;
+  position: fixed;
+  /*
+    mantem um elemento fixo na tela independente do fluxo normal do codigo.
+    */
+  position: relative;
+  position: static;
+  position: sticky;
+  /*
+    Essa propriedade precisa estar acompanhada de outras duas para pooder funcionar:
+    top / bottom: npx;
+    left / rigth: npx;
+    */
+  /*
+   o absoluto faz referencia ao elemento pai que tiver uma pition diferente de static. se ele não achar no elemento pai, vai buscar a referencia no proprio body;
+    */
+
+  z-index: 1;
+  /*
+    esta propriedade define a poisção relativa em relação aos irmãos. se vai ficar na frente ou atras de outro elemento. precisa ser usado em conjunto com o position: relative;
+    */
+
+  float: left; /*faz o lemento filho flutuar dentro do elemento pai. podendo colocar um texto ao lado de uma imagem por exemplo. fazendo ele cercar a imagem
+    é necessario colocar a propriedade overlow: auto; no elemto pai.
+
+    se precisar voltar ao fluxo normal do codigo mas continuar escrevendo dentro do elemento pai: uso o atributo clean: both;
+    */
+}
+.box-model {
+  /*direção do flexbox*/
+  flex-direction: column;
+  flex-direction: column-reverse;
+  flex-direction: row;
+  flex-direction: row-reverse;
+
+  /*quebra de linha*/
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
+
+  flex-flow: wrap, column;
+  /*
+    O flex-flow é uma propriedade CSS que funciona como uma forma abreviada das propriedades flex-direction e flex-wrap.
+    */
+
+  /*propriedades dos elementos filhos*/
+
+  flex-grow: 1;
+  /*
+    Essa propriedade indica como um elemento filho (o card) ocupará o espaço disponível, conforme a largura do container pai.
+    valor 1 indica crescimento padrão;
+    valor 0 indica nenhum crescimento;
+    quando quiser que um card cresça mais doque os outros almente o valor.
+    */
+  flex-shrink: 1;
+  /*
+    Essa propriedade indica como um elemento filho (o card) terá seu tamanho reduzido para continuar a caber em um container.
+    valor 1 indica crescimento padrão;
+    valor 0 indica nenhum crescimento;
+    quando quiser que um card cresça mais doque os outros almente o valor.
+    */
+  flex-basis: 200px;
+  /*
+     Essa propriedade indica uma largura ou uma altura inicial para um elemento filho (o card), conforme o alinhamento do container.
+    */
+  flex: 1 1 200px;
+  /*
+     Essa propriedade indica uma largura ou uma altura inicial para um elemento filho (o card), conforme o alinhamento do container.
+    */
+  /*
+    Essas propriedades são de uso exclusivo dos elementos filhos, ou seja, elas deverão ser aplicadas no código CSS dos cards (ou no CSS do conteúdo dos cards).
+    */
+}
+
+.alinhamento {
+  /*box / elemento vertical*/
+  align-items: start;
+  align-items: end;
+  align-items: center;
+  align-items: flex-end;
+
+  /*box / elemento horizontal*/
+  justify-content: center;
+  justify-content: flex-end;
+  justify-content: flex-start;
+  justify-content: stretch;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: space-between;
+
+  /*conteudo*/
+  text-align: center;
+  text-align: justify;
+  text-align: right;
+  text-align: left;
+  text-align: start;
+}
+.pseudo_clases {
+  /*pseudo clases de estado*/
+
+  a:visited {
+    /* Quando o link for visitado sua cor vai mudar verde. A pseudo-classe :visited é exclusiva para uso em links - a tag a - pois estiliza especificamente links que já foram visitados.*/
+    color: rgb(2, 155, 83);
+  }
+
+  a:hover {
+    /* Quando passar o mouse sobre o link ele vai adquirir sublinhado e cor preta*/
+    text-decoration: underline;
+    color: black;
+  }
+
+  a:active {
+    /*quando ele estiver sendo clicado sua cor mudara para amarelo*/
+    color: yellow;
+  }
+
+  /*Pseudo classe estrutural*/
+
+  p:last-of-type {
+    padding: 0px;
+    /*estilza sempre o ultimo elemento do tipo. sua posição é identificada apartir do seu elemento pai. para estilizar areas especificas do doc. tente combinar classes com seus elemtos filhos (.classe_qualquer p:last-of-type). senão podem ser estilizados elementos indesejados.*/
+  }
+
+  p:first-of-type {
+    padding: 0px;
+    /*estilza sempre o PRIMEIRO elemento do tipo. sua posição é identificada apartir do seu elemento pai. para estilizar areas especificas do doc. tente combinar classes com seus elemtos filhos (.classe_qualquer p:first-of-type). senão podem ser estilizados elementos indesejados.*/
+  }
+
+  div:nth-of-type(n) {
+    padding: 0px;
+    /*Estiliza o elemento do seletor na posição indicada*/
+  }
+
+  div:nth-of-type(odd) {
+    padding: 0px;
+    /*Estiliza todos os elementos que estiverem em posições impares*/
+  }
+
+  div:nth-of-type(even) {
+    padding: 0px;
+    /*Estiliza todos os elementos que estiverem em posições pares*/
+  }
+
+  /*Pseudo classe estrutural (child)*/
+
+  p:first-child {
+    color: red;
+    /*O estilo só será aplicado se o elemento selecionado for o primeiro filho de um elemento pai. se ele não estiver na primeira posição dentro do elemento não recebera os etilos.*/
+  }
+
+  p:last-child {
+    color: red;
+    /*O estilo só será aplicado se o elemento selecionado for o ultimo filho de um elemento pai. se ele não estiver na ultima posição dentro do elemento não recebera os etilos.*/
+  }
+
+  p:nth-child(n) {
+    color: red;
+    /*so recebera os estilos se estiver na posição indicada pelo parametro.*/
+  }
+  div:nth-child(odd) {
+    color: red;
+    /*so recebera os estilos se estiver na posição impar.*/
+  }
+  div:nth-child(even) {
+    color: red;
+    /*so recebera os estilos se estiver na posição par.*/
+  }
+
+  p:first-child {
+    color: red;
+    /**/
+  }
+
+  p:first-child {
+    color: red;
+    /**/
+  }
+
+  /*projetos
+    https://www.devmedia.com.br/view/viewaula.php?idcomp=43386
+
+    https://www.devmedia.com.br/view/viewaula.php?idcomp=43387
+
+
+    */
+  /*Ao usar esse tipo de recurso não é necessario encher o codigo de classes e codigos desnecessarios.*/
+}
+
+.pseudo_elementos {
+  /*
+    Pseudo elementos mechem diretamento no texto das htmls atraves do CSS. Pseudo-elementos são usados para estilizar parte de elementos de maneira simples e com um código limpo. Através de first-letter e first-line é possível deixar os textos com visual mais interessante sem a necessidade de fazer alterações na estrutura HTML.
+    */
+
+  a::after {
+    /*Esse Pseudo elemento adiciona a palavra "link" apos o link*/
+    content: " link OU deixe vazio para não sobrepor a imagem de fundo";
+    color: rgb(110, 109, 109);
+    font-weight: normal;
+    text-decoration: none;
+    background-image: none;
+  }
+  /*
+    Os pseudo-elementos before e after não podem ser utilizados com o seletor img. Para contornar isso adicione a tag img dentro do elemento semântico figure e aplique o pseudo-elemento desejado nele.
+
+    Os pseudo-elementos before e after tem o display:inline definido como padrão, portanto, será necessário alterar esse display caso queira exibir imagens através desses pseudo-elementos.
+
+    O uso de pseudo-elementos para adicionar conteúdos extras a um elemento permite ao desenvolvedor adicionar conteúdos de maneira automática como, por exemplo, exibir uma imagem em todos os links da página. Com isso, sempre que um novo link for adicionado, a imagem será exibida automaticamente
+
+    */
+
+  a::before {
+    /*Esse Pseudo elemento*/
+    content: "♯ ";
+  }
+
+  p::first-letter {
+    /*Estiliza a primeira letra*/
+    color: #ff0000;
+  }
+
+  p::first-line {
+    /*Estiliza a primeira linha*/
+    color: #ff0000;
+  }
+
+  /*PROJETOS
+    https://www.devmedia.com.br/view/viewaula.php?idcomp=43388
+
+    https://www.devmedia.com.br/view/viewaula.php?idcomp=43389
+
+    https://www.devmedia.com.br/view/viewaula.php?idcomp=43390
+
+    */
+}
+.media_queries {
+  /*características essenciais a um site responsivo.
+
+    Adaptar o layout da página de acordo com a resolução em que está sendo visualizada;
+
+    O layout deve ser fluido e não deve fazer uso de medidas fixas, possibilitando a adaptação natural ao dispositivo em questão;
+
+    Simplificar elementos da tela para dispositivos móveis, onde o usuário normalmente tem menos tempo e menos atenção durante a navegação;
+
+    Redimensionar as imagens e vídeos para que não sobrecarreguem a transferência de dados e também para que se adaptem ao dispositivo garantindo que os mesmos se apresentem de forma nítida, sem cortes e que não façam uso da barra de rolagem para serem visualizados;
+
+    Ocultar ou remover elementos desnecessários nos dispositivos menores;
+
+    Adaptar o tamanho de botões, links e menus para interfaces touch onde o ponteiro do mouse é substituído pelo dedo do usuário.
+    */
+  /* Smartphones (600px para baixo) */
+  @media only screen and (max-width: 600px) {
+    ...;
+  }
+
+  /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+  @media only screen and (min-width: 600px) {
+    ...;
+  }
+
+  /*Dispostivos Médios (Tablets deitados, 768px para cima) */
+  @media only screen and (min-width: 768px) {
+    ...;
+  }
+
+  /* Dispostivos Largos (laptops/desktops, 992px para cima) */
+  @media only screen and (min-width: 992px) {
+    ...;
+  }
+
+  /* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+  @media only screen and (min-width: 1200px) {
+    ...;
+  }
+  /*Media Type
+    O atributo Media Type é o responsável por designar quais regras CSS serão interpretadas por um determinado tipo de dispositivo, oferecendo a melhor apresentação possível do conteúdo sem a necessidade de alteração do mesmo.
+
+    Dentre os diversos tipos de Media Type, alguns se destacam e são importantes ao conhecimento do leitor:
+
+    ==> All: Se refere a todos os tipos de dispositivos.
+
+    ==> Braille: Se refere aos dispositivos táteis.
+
+    ==> Embossed: Se refere aos dispositivos que imprimem em braille.
+
+    ==> Handheld: Se refere aos dispositivos de mão, normalmente com telas pequenas de baixa resolução e largura de banda limitada.
+
+    ==> Print: Se refere aos dispositivos de impressão.
+
+    ==> Projection: Se refere a apresentações do tipo slides.
+
+    ==> Screen: Se refere a monitores ou dispositivos com telas coloridas e resolução adequada.
+
+    ==> Speech: Se refere a sintetizadores de voz ou leitores de tela.
+
+    ==> TTY: Se refere a terminais, teletypes e dispositivos portáteis com display limitado.
+
+    ==> TV: Se refere a televisores ou dispositivos com baixa resolução, quantidade de cores e scroll limitado.
+    */
+
+  /*formas de incluir
+        <link rel="stylesheet" href="arquivo.css" type="text/css" media="print" >
+
+        <? xml-stylesheet rel="stylesheet" href="arquivo.css" media="all" ?>
+
+        <style type="text/css" media="screen">
+        @import "arquivo.css";
+        </style>
+
+        @import url(“estilo.css”) print;
+
+        ==> @media screen {
+            body {
+                background-color: #F00;
+            }
+        }
+    */
+
+  /*Atributos aceitos
+        ==> aspect-ratio - Se refere à proporção entre os valores de largura e altura. Os valores são compostos pela divisão da largura/valor da altura. Não aceita os prefixos min/max.
+
+        ==> device-aspect-ratio	- Se refere à proporção entre os valores de largura e altura do dispositivo. Os valores são compostos por valor da largura/valor da altura. Não aceita os prefixos min/max.
+
+        ==> Color - Se refere ao número de bits por cor. Os valores são numéricos. Aceita os prefixos min/max.
+
+        ==> color-index	- Se refere ao número de entradas na tabela de pesquisa de cores do dispositivo de saída. Os valores são numéricos. Aceita os prefixos min/max.
+
+        ==> Height	- Se refere à altura da janela do navegador. Os valores são medidas de comprimento. Aceita os prefixos min/max.
+
+        ==> device-height	- Se refere à altura da mídia. Os valores são medidas de comprimento. Aceita os prefixos min/max.
+
+        ==> Width	- Se refere à largura da janela do navegador. Os valores são medidas de comprimento. Aceita os prefixos min/max.
+
+        ==> device-width - Se refere à largura da mídia. Os valores são medidas de comprimento. Aceita os prefixos min/max.
+
+        ==> Grid	- Se refere ao tipo de dispositivo, se é orientado a bitmaps ou grids. Os valores são 1 para dispositivos orientados a grid e 0 para dispositivos orientados a bitmap. Não aceita os prefixos min/max.
+
+        ==> Monochrome	- Se refere ao número de bits por pixel em um buffer de quadros monocromáticos. Os valores são numéricos. Aceita os prefixos min/max.
+
+        ==> Orientation	- Se refere à orientação da mídia. Os valores são portrait para vertical / retrato e landscape para horizontal / paisagem. Não aceita os prefixos min/max.
+
+        ==> Resolution	- Se refere à resolução, densidade por pixel, utilizada pelo dispositivo. Os valores são em DPI ou DCM. Aceita os prefixos min/max.
+
+        ==> Scan	- Se refere ao tipo de formação de imagens para televisores. Os valores são progressive ou interlace. Não aceita os prefixos min/max.
+    */
+
+  /*operadores
+    ==> not: É utilizado quando se deseja que o resultado de uma determinada expressão seja o oposto ao real. Veja na Listagem 1 um exemplo do seu uso.
+
+    ==> only: É utilizado quando se deseja prevenir que navegadores antigos que não suportam Media Features tentem processar a expressão. Na Listagem 2 podemos ver um exemplo fiel disso.
+
+    ==> and: É utilizado em todas as Media Queries, tendo como função primária ser o elo entre o Media Type e a Media Feature. É também responsável pelas expressões múltiplas, isto é, quando usamos mais de uma Media Feature para compor a expressão.
+
+    ==> “,“: É utilizado para juntar duas ou mais expressões diferentes que deverão executar um mesmo conjunto de regras. Funciona como um “ou” condicional na lógica de programação.
+    */
+
+  /*exemplos:
+        @media only screen and (max-width: 320px) {
+            h1 {
+                text-decoration: underline;
+            }
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+            header {
+                width: 100%;
+            }
+        }
+
+        @media only handheld and (max-width: 500px), only screen and (max-width: 620px) {
+            p {
+                font-weight: bold;
+            }
+        }
+    */
+
+  /*Breakpoints
+
+       INICIO REGRAS PARA TODOS OS DISPOSITIVOS
+         INSIRA REGRAS CSS AQUI!
+        FIM REGRAS PARA TODOS OS DISPOSITIVOS
+
+        INICIO REGRAS PARA DISPOSITIVOS DE IMPRESSÃO
+            @media print {
+            INSIRA REGRAS CSS AQUI!
+            }
+        FIM REGRAS PARA DISPOSITIVOS DE IMPRESSÃO
+
+        INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES
+            @media screen and (min-width: 320px) {
+                INSIRA REGRAS CSS AQUI!
+            }
+        FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 320 PIXELS. POR EXEMPLO: SMARTHPHONES
+
+        INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS
+            @media screen and (min-width: 768px) {
+            INSIRA REGRAS CSS AQUI!
+            }
+        FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 768 PIXELS. POR EXEMPLO: TABLETS
+
+        INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 1024 PIXELS. POR EXEMPLO: COMPUTADORES DESKTOP E NOTEBOOKS
+            @media screen and (min-width: 1024px) {
+            INSIRA REGRAS CSS AQUI!
+            }
+        FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÍNIMA DE 1024 PIXELS. POR EXEMPLO: COMPUTADORES DESKTOP E NOTEBOOKS
+    */
+
+  /*referencias
+        ==> Site com diversos exemplos de sites responsivos:
+
+        https://mediaqueri.es/
+
+        ==> Dicas para projetos de sites responsivos:
+
+        https://css-tricks.com/notes-agency-starting-their-first-responsive-web-project/
+
+    */
+}
+.unidades_medidas {
+  /*
+    px - (pixels)
+    % - (calcula o tamanho relativo ao elemento pai)
+    pt - (pontos)
+    vw - (largura da tela)
+    vh - (altura da tela)
+    em - (1em é uma vez o font-size do elemento)
+    rem - (1rem é uma vez o font-size do elemento acima na hierarquia de elementos)
+    */
+}
