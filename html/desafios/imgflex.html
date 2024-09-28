@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens flexiveis</title>
+    <link
+      rel="shortcut icon"
+      href="../desafios/arquivos/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-color: rgb(42, 78, 99);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Imagem Flexível</h1>
+    <p>Mude o tamanho do seu navegador e veja a flexibilidade dessa imagem</p>
+    <picture>
+      <source
+        media="(max-width: 500px)"
+        srcset="../desafios/arquivos/paisagem-p.png"
+        type="image/png"
+        alt="paisagem-p"
+      />
+      <source
+        media="(max-width: 950px)"
+        srcset="../desafios/arquivos/paisagem-m.png"
+        type="image/png"
+        alt="paisagem-m"
+      />
+      <img src="../desafios/arquivos/paisagem-g.png" alt="Paisagen G" />
+    </picture>
+    <p>
+      <a href="desafionaveg.html"
+        ><img
+          src="../desafios/arquivos/voltar.png"
+          alt="Volta a pagina Inicial"
+      /></a>
+    </p>
+  </body>
+</html>
