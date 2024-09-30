@@ -3,12 +3,10 @@ import style from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={style.page}>
-      <main className={style.main}>
-        <Card />
-        <Card />
-        <Card />
-      </main>
-    </div>
+    <main className={style.secao_cards}>
+      <Card />
+      <Card />
+      <Card />
+    </main>
   );
 }

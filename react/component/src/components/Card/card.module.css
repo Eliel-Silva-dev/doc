@@ -1,12 +1,12 @@
 .container_cards {
+  display: flex;
   flex: 1 1 300px;
   padding: 30px 10px;
-  background-color: rgb(194, 193, 193);
-  display: flex;
+  background-color: rgb(193, 194, 193);
   flex-direction: column;
   gap: 30px;
 }
 
-.container_card p {
+.container_cards p {
   font-size: 22px;
 }
