@@ -24,12 +24,14 @@ classificacao = ''
 observação = ''
 
 print() #pular uma linha
-#Mostrando o valor do imc na tela
-print('Seu IMC é de:  {:.2f}'.format(calcIMC))
-
-print() #pular uma linha
 
 if calcIMC > 0: # Verifica se o imc é maior que zero
+
+    #Mostrando o valor do imc na tela
+    print('Seu IMC é de:  {:.2f}'.format(calcIMC))
+
+    print() #pular uma linha
+
     if calcIMC < 18.5: # Verificação da faixa de imc
         classificacao = 'Abaixo do peso'
         observação = 'Magreza'
@@ -48,12 +50,12 @@ if calcIMC > 0: # Verifica se o imc é maior que zero
     else:
         classificacao = 'Obesidade grau 3'
         observação = 'Obesidade mórbida, procure acompanhamento médico'
+
+    print(f'Classificação: {classificacao}')
+    print() #pular uma linha
+
+    print(f'Observação: {observação}')
+    print() #pular uma linha
 else:
     #Mensagem de erro em caso de imc zero
     print('Valores inválidos não foi possível calcular seu IMC')
-
-print(f'Classificação: {classificacao}')
-print() #pular uma linha
-
-print(f'Observação: {observação}')
-print() #pular uma linha
