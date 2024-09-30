@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import { Topo } from '@/components/Topo';
+import { Rodape } from '@/components/Rodape';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
