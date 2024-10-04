@@ -1,4 +1,4 @@
-import style from './Backend.module.css';
+import style from './style.module.css';
 import Link from 'next/link';
 
 export default function Backend() {

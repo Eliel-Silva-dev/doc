@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import style from './Page.module.css';
+import style from './style.module.css';
 
 export default function Frontend() {
   return (
