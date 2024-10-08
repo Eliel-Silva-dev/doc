@@ -1,7 +1,9 @@
-import { useState } from 'react';
-import style from './PaginaInicial.module.css';
+'use client';
 
-export const PaginaInicla = () => {
+import { useState } from 'react';
+import style from './style.module.css';
+
+const PaginaInicial = () => {
   let [numeroAleatorio, SetNumeroAleatorio] = useState(0);
 
   function gerarNumero() {
@@ -23,3 +25,5 @@ export const PaginaInicla = () => {
     </section>
   );
 };
+
+export default PaginaInicial;
