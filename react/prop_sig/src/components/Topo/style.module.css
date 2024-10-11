@@ -1,0 +1,22 @@
+.header {
+  background-color: #4d538c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.header h1 {
+  font-size: 32;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.link_home {
+  color: #9fe794;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 30px;
+}
