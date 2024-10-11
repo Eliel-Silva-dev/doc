@@ -3,12 +3,12 @@ import style from './style.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Aquario() {
+export default function Gemeos() {
   return (
-    <main className={style.main_aquario}>
+    <main className={style.main_gemeos}>
       <div className={style.page}>
-        <h1>Aquario</h1>
-        <Image src="/aquario.jpg" width="300" height="300" alt="" />
+        <h1>Gemeos</h1>
+        <Image src="/gemeos.jpg" width="300" height="300" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
           obcaecati excepturi. Aspernatur dolores ea vel temporibus, ipsum

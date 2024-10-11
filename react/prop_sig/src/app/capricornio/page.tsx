@@ -1,4 +1,4 @@
-import style from './Capricornio.module.css';
+import style from './style.module.css';
 
 import Image from 'next/image';
 import Link from 'next/link';
