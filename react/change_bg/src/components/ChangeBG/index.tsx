@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import style from './Troca_bg.module.css';
+import style from './style.module.css';
 
 export const ChangeBG = () => {
   let [nova_bg, setNova_bg] = useState(style.bg_vermelho);
