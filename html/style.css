@@ -7,12 +7,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
   padding: 15px;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   margin: 0px 5px;
   background-color: rgb(224, 245, 248);
+  font-size: 1.7rem;
 }
 header {
   background-color: transparent;
@@ -48,5 +51,13 @@ h1 {
   display: flex;
   background-color: rgb(198, 228, 218);
   width: 580px;
-  margin: 0px auto;
+  margin: 10px auto;
+}
+.lado div {
+  padding: 10px;
+}
+.lado li {
+  list-style: none;
+  padding: 7px;
+  font-weight: 600;
 }
